@@ -17,7 +17,7 @@ set numberwidth=4
 set cursorline
  "Command-/ to toggle comments
 map <D-/> mz<plug>NERDCommenterToggle<CR>`z
-imap <D-/> <Esc><plug>NERDCommenterToggle<CR>`zi
+imap <D-/> <Esc>mz<plug>NERDCommenterToggle<CR>`zi
 
 " Status Line ----------------------------
 set showcmd
