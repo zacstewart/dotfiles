@@ -1,47 +1,37 @@
+""" Pathogen
+call pathogen#infect()
 syntax on
-set mouse=a
-set showmode
-autocmd VimEnter * wincmd p
-colorscheme railscasts
-" Whitespace -----------------------------
-set autoindent
+filetype plugin indent on
+au BufRead,BufNewFile *.scss set filetype=scss
+
+""" Colors
+colorscheme darkspectrum
+
+""" Whitespace
+" Indentation
+set ai
+set si
+" Use soft tabs
 set expandtab
-set tabstop=2
-set ts=2
-set shiftwidth=2
+set tabstop=2 shiftwidth=2 softtabstop=2
+" Highlight trailing ws
 set listchars=tab:->,trail:·
 set list
 set nowrap
-" Numbers --------------------------------
+" Line numbers
 set number
-set scrolloff=3
-set sidescrolloff=2
-set numberwidth=4
 set cursorline
-" Command-/ to toggle comments
-map <D-/> <plug>NERDCommenterToggle<CR>
-imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
-" NERD Tree
-map <D-D> :NERDTreeToggle<CR>
+
+""" Shortkeys
+nmap <D-t> :CommandT<CR>
+imap <D-t> <Esc>:CommandT<CR>
+nmap <D-D> :NERDTreeToggle<CR>
 imap <D-D> <Esc>:NERDTreeToggle<CR>
-" Searching
-map <D-F> :Ack<space>
-imap <D-F> <Esc>:Ack<space>
-" jj to escape
+nmap <D-/> mc<plug>NERDCommenterToggle<CR>'c
+imap <D-/> <Esc>mc<plug>NERDCommenterToggle<CR>'ci
 imap jj <Esc>
-" New line from anywhere
 imap <D-CR> <Esc>o
 imap <S-D-CR> <Esc>O
-" Status Line ----------------------------
-set showcmd
-set wildmenu
-set wildmode=list:longest
-set ruler
-set shortmess=atI
 
-" Indenting ------------------------------
-set ai
-set si
-filetype plugin indent on
-" Swap files
-set directory^=$HOME/.vim/.swap//
+""" Filesystem
+set directory^=$HOME/.vim/.swp//

@@ -1,7 +1,6 @@
-color railscasts
-
 if has("gui_macvim")
-  macmenu &File.New\ Tab key=<nop>
-  map <D-t> :CommandT<CR>
-  imap <D-t> <Esc>:CommandT<CR>
+  " Remap New Tab shortcut
+  macmenu &File.New\ Tab key=<D-T>
+  " Hide toolbar
+  set guioptions=egmrt
 endif
