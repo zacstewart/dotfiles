@@ -1,13 +1,12 @@
-""" Pathogen
+" Pathogen
 call pathogen#infect()
 syntax on
 filetype plugin indent on
 au BufRead,BufNewFile *.scss set filetype=scss
 
-""" Colors
+" Colors
 colorscheme darkspectrum
 
-""" Whitespace
 " Indentation
 set ai
 set si
@@ -21,8 +20,11 @@ set nowrap
 " Line numbers
 set number
 set cursorline
+" Status line
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set laststatus=2
 
-""" Shortkeys
+" Shortkeys
 nmap <D-t> :CommandT<CR>
 imap <D-t> <Esc>:CommandT<CR>
 map <Leader><D-t> :CommandTFlush<CR>
@@ -36,8 +38,14 @@ imap <D-CR> <Esc>o
 imap <S-D-CR> <Esc>O
 map <D-n> :edit 
 imap <D-n> <Esc>:edit 
+map <Leader>s :if &laststatus==2 <Bar>
+        \set laststatus=0 <Bar>
+      \else <Bar>
+        \set laststatus=2 <Bar>
+      \endif <Bar>
+      \<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-""" Filesystem
+" Swp file location
 set directory^=$HOME/.vim/.swp/
