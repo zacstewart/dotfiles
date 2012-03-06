@@ -35,7 +35,9 @@ imap jj <Esc>
 imap <D-CR> <Esc>o
 imap <S-D-CR> <Esc>O
 map <D-n> :edit 
-imap <D-n> <Esc>:Edit 
+imap <D-n> <Esc>:edit 
+vnoremap << <gv
+vnoremap >> >gv
 
 """ Filesystem
-set directory^=$HOME/.vim/.swp//
+set directory^=$HOME/.vim/.swp/
