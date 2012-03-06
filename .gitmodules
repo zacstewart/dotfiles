@@ -25,3 +25,6 @@
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
 	url = git://github.com/digitaltoad/vim-jade.git
+[submodule "rc"]
+	path = rc
+	url = git@gist.github.com:1160751.git
