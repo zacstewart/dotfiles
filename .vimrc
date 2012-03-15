@@ -27,8 +27,8 @@ set laststatus=2
 " Shortkeys
 nmap <D-t> :CommandT<CR>
 imap <D-t> <Esc>:CommandT<CR>
-map <Leader><D-t> :CommandTFlush<CR>
-imap <Leader><D-t> <Esc>:CommandTFlush<CR>
+map <Leader><D-t> :CommandTFlush<CR>:CommandT<CR>
+imap <Leader><D-t> <Esc>:CommandTFlush<CR>:CommandT<CR>
 nmap <D-D> :NERDTreeToggle<CR>
 imap <D-D> <Esc>:NERDTreeToggle<CR>
 map <D-/> mc<plug>NERDCommenterToggle<CR>'c
@@ -36,14 +36,16 @@ imap <D-/> <Esc>mc<plug>NERDCommenterToggle<CR>'ci
 imap jj <Esc>
 imap <D-CR> <Esc>o
 imap <S-D-CR> <Esc>O
-map <D-n> :edit 
-imap <D-n> <Esc>:edit 
-map <Leader>s :if &laststatus==2 <Bar>
-        \set laststatus=0 <Bar>
-      \else <Bar>
-        \set laststatus=2 <Bar>
-      \endif <Bar>
-      \<CR>
+map <D-n> :edit
+imap <D-n> <Esc>:edit
+"" Toggle status line
+map <Leader>s :if &laststatus==2<Bar>
+        \set laststatus=0<Bar>
+      \else<Bar>
+        \set laststatus=2<Bar>
+      \endif<CR>
+"" Remove whitespace
+map <Leader><Space> :%s/\s\+$//g<CR>
 vnoremap < <gv
 vnoremap > >gv
 
