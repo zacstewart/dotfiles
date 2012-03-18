@@ -28,3 +28,6 @@
 [submodule "rc"]
 	path = rc
 	url = git@gist.github.com:1160751.git
+[submodule "bundle/vim-slim"]
+	path = bundle/vim-slim
+	url = https://github.com/bbommarito/vim-slim.git
