@@ -27,8 +27,8 @@ set laststatus=2
 " Shortkeys
 nmap <D-t> :CommandT<CR>
 imap <D-t> <Esc>:CommandT<CR>
-map <Leader><D-t> :CommandTFlush<CR>
-imap <Leader><D-t> <Esc>:CommandTFlush<CR>
+map <Leader><D-t> :CommandTFlush<CR>:CommandT<CR>
+imap <Leader><D-t> <Esc>:CommandTFlush<CR>:CommandT<CR>
 nmap <D-D> :NERDTreeToggle<CR>
 imap <D-D> <Esc>:NERDTreeToggle<CR>
 map <D-/> mc<plug>NERDCommenterToggle<CR>'c
