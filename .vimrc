@@ -27,6 +27,8 @@ set laststatus=2
 " Shortkeys
 nmap <D-t> :CommandT<CR>
 imap <D-t> <Esc>:CommandT<CR>
+nmap <D-f> /
+imap <D-f> <Esc>/
 map <Leader><D-t> :CommandTFlush<CR>:CommandT<CR>
 imap <Leader><D-t> <Esc>:CommandTFlush<CR>:CommandT<CR>
 nmap <D-D> :NERDTreeToggle<CR>
