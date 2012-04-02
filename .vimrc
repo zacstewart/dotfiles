@@ -38,10 +38,10 @@ imap <D-/> <Esc>mc<plug>NERDCommenterToggle<CR>'ci
 imap jj <Esc>
 imap <D-CR> <Esc>o
 imap <S-D-CR> <Esc>O
-map <D-n> :edit
-imap <D-n> <Esc>:edit
 map <D-[> <C-w>h
 map <D-]> <C-w>l
+map <D-n> :edit<Space>
+imap <D-n> <Esc>:edit<Space>
 "" Toggle status line
 map <Leader>s :if &laststatus==2<Bar>
         \set laststatus=0<Bar>
