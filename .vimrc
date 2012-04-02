@@ -40,6 +40,8 @@ imap <D-CR> <Esc>o
 imap <S-D-CR> <Esc>O
 map <D-n> :edit
 imap <D-n> <Esc>:edit
+map <D-[> <C-w>h
+map <D-]> <C-w>l
 "" Toggle status line
 map <Leader>s :if &laststatus==2<Bar>
         \set laststatus=0<Bar>
