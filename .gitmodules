@@ -43,3 +43,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/vim-railscasts"]
+	path = bundle/vim-railscasts
+	url = https://github.com/jgdavey/vim-railscasts.git
