@@ -24,6 +24,10 @@ set cursorline
 " Status line
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
+" Use line for insert cursor
+" http://groups.google.com/group/iterm2-discuss/browse_thread/thread/d626717e08a9b787
+let &t_SI = "\<Esc>]50;CursorShape=1\x7" 
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " Shortkeys
 nmap <D-f> /
