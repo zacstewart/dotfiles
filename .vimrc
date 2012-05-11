@@ -5,6 +5,7 @@ filetype plugin indent on
 au BufRead,BufNewFile *.scss set filetype=scss
 
 " Colors
+set t_Co=256
 colorscheme ir_black
 
 " Indentation
