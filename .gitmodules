@@ -46,3 +46,6 @@
 [submodule "bundle/vim-railscasts"]
 	path = bundle/vim-railscasts
 	url = https://github.com/jgdavey/vim-railscasts.git
+[submodule "bundle/vim-lettuce-colors"]
+	path = bundle/vim-lettuce-colors
+	url = https://github.com/zalun/vim-lettuce-colors.git
