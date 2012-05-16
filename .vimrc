@@ -30,19 +30,7 @@ let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " Shortkeys
-nmap <D-f> /
-imap <D-f> <Esc>/
-nmap <D-D> :NERDTreeToggle<CR>
-imap <D-D> <Esc>:NERDTreeToggle<CR>
-map <D-/> mc<plug>NERDCommenterToggle<CR>'c
-imap <D-/> <Esc>mc<plug>NERDCommenterToggle<CR>'ci
 imap jj <Esc>
-imap <D-CR> <Esc>o
-imap <S-D-CR> <Esc>O
-map <D-[> <C-w>h
-map <D-]> <C-w>l
-map <D-n> :edit<Space>
-imap <D-n> <Esc>:edit<Space>
 "" Toggle status line
 map <Leader>s :if &laststatus==2<Bar>
         \set laststatus=0<Bar>
@@ -64,7 +52,7 @@ function! MyFoldFunction()
   let numfolded = v:foldend - v:foldstart + 1
   return line . '  folded ' . numfolded . ' lines'
 endfunction
- 
+
 highlight Folded term=bold ctermbg=0 ctermfg=7 guibg=bg guifg=fg
 highlight FoldColumn term=bold ctermbg=10 ctermfg=7 guibg=bg guifg=fg
 " Visual indent
