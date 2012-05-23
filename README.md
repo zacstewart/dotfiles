@@ -13,12 +13,3 @@
 ~ $ ln -s ~/.vim/rc/.vimrc ~/.vimrc
 ~ $ ln -s ~/.vim/rc/.gvimrc ~/.gvimrc
 ```
-
-3. Build Command-T
-
-```bash
-~ $ cd ~/.vim/bundles/command-t/ruby/command-t
-~ $ rvm use system # ensure you are using system Ruby!
-~ $ ruby extconfig.rb
-~ $ make
-```
