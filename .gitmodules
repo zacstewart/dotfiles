@@ -49,3 +49,6 @@
 [submodule "bundle/vim-lettuce-colors"]
 	path = bundle/vim-lettuce-colors
 	url = https://github.com/zalun/vim-lettuce-colors.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
