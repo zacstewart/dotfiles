@@ -1,0 +1,18 @@
+[user]
+	name = Zac Stewart
+	email = zgstewart@gmail.com
+[core]
+	editor = vim
+	excludesfile = /Users/zacstewart/.gitignore_global
+[color]
+	ui = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[web]
+	browser = chrome
+[browser "chrome"]
+	cmd = open -a \"Google Chrome.app\"
