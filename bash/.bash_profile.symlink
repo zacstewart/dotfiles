@@ -1,3 +1,6 @@
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
+
+# Load RVM into shell
+[[ -s "/Users/zacstewart/.rvm/scripts/rvm" ]] && source "/Users/zacstewart/.rvm/scripts/rvm"

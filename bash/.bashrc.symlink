@@ -1,4 +1,15 @@
-[[ -s "/Users/zacstewart/.rvm/scripts/rvm" ]] && source "/Users/zacstewart/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+function parse_git_branch {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+PATH=/usr/local/bin:$PATH
+
+# TODO: Make a credentials folder and put all 
+# files like this in there.
+if [ -f ~/.aws/credentials ]; then
+   source ~/.aws/credentials
+fi
+
 #ANSI Colors
 RS="\[\033[0m\]"    # reset
 HC="\[\033[1m\]"    # hicolor
@@ -21,17 +32,10 @@ BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
-PATH=/usr/local/bin:$PATH
-
+# Prompt
 PS1_HOST="\[\e[1;31m\]\u@\h\[\e[0m\]:"
 PS1_PROMPT="$ "
-
 if [ -z "${SSH_TTY-}" ]; then
     PS1_HOST=''
 fi
-
-function parse_git_branch {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-
-PS1="$FWHT$PS1_HOST\w $FYEL\$(parse_git_branch)$FWHTPS1_PROMPT "
+PS1="$FWHT$PS1_HOST\w $FYEL\$(parse_git_branch)$FWHT$PS1_PROMPT"
