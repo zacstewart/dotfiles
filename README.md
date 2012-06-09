@@ -1,3 +1,3 @@
-== dotfiles
+# dotfiles
 
-A collection of all my NIX configuration files.
+A collection of all my NIX configuration files. Install script forthcoming.
