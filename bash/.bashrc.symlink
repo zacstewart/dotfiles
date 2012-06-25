@@ -39,3 +39,6 @@ if [ -z "${SSH_TTY-}" ]; then
     PS1_HOST=''
 fi
 PS1="$FWHT$PS1_HOST\w $FYEL\$(parse_git_branch)$FWHT$PS1_PROMPT"
+
+# Bash completion
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
