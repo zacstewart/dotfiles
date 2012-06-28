@@ -1,4 +1,3 @@
-source $HOME/.bash/git-completion.bash
 function parse_git_branch {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
@@ -39,7 +38,12 @@ PS1_PROMPT="$ "
 if [ -z "${SSH_TTY-}" ]; then
     PS1_HOST=''
 fi
+
 PS1="$FWHT$PS1_HOST\w $FYEL\$(parse_git_branch)$FWHT$PS1_PROMPT$RS"
 
 source $HOME/.bash_aliases
 alias ba='vim $HOME/.bash_aliases && source $HOME/.bash_aliases'
+
+# Bash completion
+[[ -r $HOME/.bash/git-completion.bash ]] && source $HOME/.bash/git-completion.bash
+[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
