@@ -4,6 +4,11 @@ function parse_git_branch {
 
 PATH=/usr/local/bin:$PATH
 
+# Add my key to agent for forwarding unless it's already there
+if [[ `ssh-add -l` != *id_?sa* ]]; then
+  ssh-add -l
+fi
+
 # TODO: Make a credentials folder and put all 
 # files like this in there.
 if [ -f ~/.aws/credentials ]; then
