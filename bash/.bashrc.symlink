@@ -3,6 +3,7 @@ function parse_git_branch {
 }
 
 PATH=/usr/local/bin:$PATH
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # TODO: Make a credentials folder and put all 
 # files like this in there.
