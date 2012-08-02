@@ -3,7 +3,12 @@ function parse_git_branch {
 }
 
 PATH=/usr/local/bin:$PATH
+PATH=/usr/local/sbin:$PATH
+PATH=/usr/local/share/python:$PATH # Use homebrew py for easy_install
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+export EDITOR=mvim
+
 
 # TODO: Make a credentials folder and put all 
 # files like this in there.
@@ -40,7 +45,7 @@ if [ -z "${SSH_TTY-}" ]; then
     PS1_HOST=''
 fi
 
-PS1="$FWHT$PS1_HOST\w $FYEL\$(parse_git_branch)$FWHT$PS1_PROMPT$RS"
+PS1="$FGRN$PS1_HOST\w $FYEL\$(parse_git_branch)$FRED$PS1_PROMPT$RS"
 
 source $HOME/.bash_aliases
 alias ba='vim $HOME/.bash_aliases && source $HOME/.bash_aliases'
