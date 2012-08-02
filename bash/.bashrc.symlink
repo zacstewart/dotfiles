@@ -10,6 +10,11 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export EDITOR=mvim
 
 
+# Add my key to agent for forwarding unless it's already there
+if [[ `ssh-add -l` != *id_?sa* ]]; then
+  ssh-add -l
+fi
+
 # TODO: Make a credentials folder and put all 
 # files like this in there.
 if [ -f ~/.aws/credentials ]; then
@@ -47,8 +52,8 @@ fi
 
 PS1="$FGRN$PS1_HOST\w $FYEL\$(parse_git_branch)$FRED$PS1_PROMPT$RS"
 
-source $HOME/.bash_aliases
 alias ba='vim $HOME/.bash_aliases && source $HOME/.bash_aliases'
+source $HOME/.bash_aliases
 
 # Bash completion
 [[ -r $HOME/.bash/git-completion.bash ]] && source $HOME/.bash/git-completion.bash
