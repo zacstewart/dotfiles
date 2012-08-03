@@ -25,6 +25,7 @@ set number                                      " turn on line numbers
 set cursorline                                  " highlight current line
 set laststatus=2                                " always show statusline
 set noshowmode                                  " but not mode
+set clipboard=unnamed                           " use OS clipboard by default
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"        " set cursor to line on start insert mode
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"        " go back to block for normal mode
 " Toggle status line
