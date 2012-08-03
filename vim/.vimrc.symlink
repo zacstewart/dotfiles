@@ -44,6 +44,19 @@ nnoremap <C-l> :tabnext<CR>
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>x :tabclose<CR>
 nnoremap <Leader>d :NERDTreeToggle<CR>
+" Tabularize
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a{ :Tabularize /{<CR>
+vmap <Leader>a{ :Tabularize /{<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+nmap <Leader>a, :Tabularize /,\zs<CR>
+vmap <Leader>a, :Tabularize /,\zs<CR>
+nmap <Leader>a> :Tabularize /=><CR>
+vmap <Leader>a> :Tabularize /=><CR>
+nmap <Leader>a\| :Tabularize /\|<CR>
+vmap <Leader>a\| :Tabularize /\|<CR>
 " remove superfluous whitespace
 map <Leader><Space> :%s/\s\+$//g<CR>
 " Visual indent

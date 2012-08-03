@@ -55,3 +55,6 @@
 [submodule "vim/.vim.symlink/bundle/jslint.vim"]
 	path = vim/.vim.symlink/bundle/jslint.vim
 	url = git://github.com/hallettj/jslint.vim.git
+[submodule "vim/.vim.symlink/bundle/tabular"]
+	path = vim/.vim.symlink/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
