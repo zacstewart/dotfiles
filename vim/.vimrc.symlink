@@ -7,7 +7,9 @@ set directory^=$HOME/.vim/.swp/                 " centralize swp file location
 " Colors
 syntax on                                       " turn on syntax highlighting
 set t_Co=256                                    " use 256 colors
-colorscheme ir_black                            " and ir_black as default theme
+let g:solarized_termcolors=256
+set background=dark                             " Dark background
+colorscheme solarized                           " and solarized as default theme
 " Text formatting
 set ai                                          " auto-indent
 set si                                          " smart indentation
@@ -63,7 +65,7 @@ map <Leader><Space> :%s/\s\+$//g<CR>
 vnoremap < <gv
 vnoremap > >gv
 " Ruby-friendly folding
-set foldmethod=syntax
+set foldmethod=indent
 set foldlevel=100
 set foldminlines=2
 set foldtext=MyFoldFunction()
