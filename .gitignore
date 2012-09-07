@@ -1,4 +1,3 @@
 vim/.vim.symlink/.netrwhist
-vim/.vim.symlink/.swp/*.swp
-vim/.vim.symlink/.swp/*.swo
+vim/.vim.symlink/.swp/*.sw*
 .DS_Store
