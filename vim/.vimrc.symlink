@@ -4,12 +4,13 @@ filetype plugin indent on                       " use filetype detection and loa
 au BufRead,BufNewFile *.scss set filetype=scss  " manually define scss filetype detection
 set directory^=$HOME/.vim/.swp/                 " centralize swp file location
 
-" Colors
+" Appearance
 syntax on                                       " turn on syntax highlighting
 set t_Co=256                                    " use 256 colors
 let g:solarized_termcolors=256
 set background=dark                             " Dark background
 colorscheme solarized                           " and solarized as default theme
+let g:Powerline_symbols = 'fancy'
 " Text formatting
 set ai                                          " auto-indent
 set si                                          " smart indentation
