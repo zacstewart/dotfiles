@@ -73,3 +73,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-ruby"]
 	path = vim/.vim.symlink/bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "tmux/bundles/tmux-colors-solarized"]
+	path = tmux/bundles/tmux-colors-solarized
+	url = git://github.com/seebi/tmux-colors-solarized.git
