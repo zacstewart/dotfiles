@@ -76,3 +76,6 @@
 [submodule "tmux/bundles/tmux-colors-solarized"]
 	path = tmux/bundles/tmux-colors-solarized
 	url = git://github.com/seebi/tmux-colors-solarized.git
+[submodule "vim/.vim.symlink/bundle/vim-scala"]
+	path = vim/.vim.symlink/bundle/vim-scala
+	url = git://github.com/derekwyatt/vim-scala.git
