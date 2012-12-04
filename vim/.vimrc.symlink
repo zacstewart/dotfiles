@@ -7,10 +7,11 @@ set directory^=$HOME/.vim/.swp//                " centralize swp file location
 " Appearance
 syntax on                                       " turn on syntax highlighting
 set t_Co=256                                    " use 256 colors
-let g:solarized_termcolors=256
-set background=dark                             " Dark background
-colorscheme solarized                           " and solarized as default theme
-let g:Powerline_symbols = 'fancy'
+let g:solarized_termcolors=256                  " limit Solarized theme to 256 colors
+set background=dark                             " dark background
+colorscheme solarized                           " and Solarized as default theme
+let g:Powerline_symbols = 'fancy'               " fancy glyphs for my status line
+
 " Text formatting
 set ai                                          " auto-indent
 set si                                          " smart indentation
@@ -20,6 +21,7 @@ set shiftwidth=2                                " auto-indent and shift by 2 spa
 set list                                        " show non-printed chars
 set listchars=tab:>-,trail:·                    " specifically, tabs and trailing whitespace
 set nowrap                                      " turn off line wrapping
+
 " UI
 set mouse=a                                     " use mouse in all modes
 set wildmode=longest,list,full                  " tab completeion: 1) bash-like, 2) list, 3) wildmenu
@@ -29,6 +31,8 @@ set cursorline                                  " highlight current line
 set laststatus=2                                " always show statusline
 set noshowmode                                  " but not mode
 set clipboard=unnamed                           " use OS clipboard by default
+
+" Set cursor to a line in edit mode
 if exists('$TMUX')
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
   let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
@@ -36,6 +40,7 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
 " Toggle status line
 map <Leader>s :call ToggleStatusline()<CR>
 function! ToggleStatusline()
@@ -45,6 +50,7 @@ function! ToggleStatusline()
     set laststatus=2
   endif
 endfunction
+
 " Custom key mapping
 inoremap jj <Esc>
 nnoremap <C-h> :tabprevious<CR>
@@ -70,17 +76,3 @@ map <Leader><Space> :%s/\s\+$//g<CR>
 " Visual indent
 vnoremap < <gv
 vnoremap > >gv
-" Ruby-friendly folding
-set foldmethod=indent
-set foldlevel=100
-set foldminlines=2
-set foldtext=MyFoldFunction()
-set fillchars=fold:\ 
-function! MyFoldFunction()
-  let line = getline(v:foldstart)
-  let lastline = getline(v:foldend)
-  let numfolded = v:foldend - v:foldstart + 1
-  return line . '  folded ' . numfolded . ' lines'
-endfunction
-highlight Folded term=bold ctermbg=0 ctermfg=7 guibg=bg guifg=fg
-highlight FoldColumn term=bold ctermbg=10 ctermfg=7 guibg=bg guifg=fg
