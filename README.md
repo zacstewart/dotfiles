@@ -1,6 +1,6 @@
 # dotfiles
 
-My UNIX configuration. Still working on making it Linux-friendly and a more rebust install procedure.
+My UNIX configuration. Still working on making it Linux-friendly and a more robust install procedure.
 Currently it does not handle security related content like keys.
 
 ## Install
