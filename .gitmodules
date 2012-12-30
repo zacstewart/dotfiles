@@ -82,3 +82,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-vroom"]
 	path = vim/.vim.symlink/bundle/vim-vroom
 	url = git://github.com/skalnik/vim-vroom.git
+[submodule "vim/.vim.symlink/bundle/ragel.vim"]
+	path = vim/.vim.symlink/bundle/ragel.vim
+	url = git@github.com:jayferd/ragel.vim.git
