@@ -76,3 +76,8 @@ map <Leader><Space> :%s/\s\+$//g<CR>
 " Visual indent
 vnoremap < <gv
 vnoremap > >gv
+
+nnoremap <Leader>rh8 :call Ruby19HashTo18()<CR>
+function! Ruby19HashTo18()
+  normal bf:xbPea =>
+endfunction
