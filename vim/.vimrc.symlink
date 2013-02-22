@@ -53,10 +53,6 @@ endfunction
 
 " Custom key mapping
 inoremap jj <Esc>
-nnoremap <C-h> :tabprevious<CR>
-nnoremap <C-l> :tabnext<CR>
-nnoremap <Leader>t :tabnew<CR>
-nnoremap <Leader>x :tabclose<CR>
 nnoremap <Leader>d :NERDTreeToggle<CR>
 " Tabularize
 nmap <Leader>a= :Tabularize /=<CR>
