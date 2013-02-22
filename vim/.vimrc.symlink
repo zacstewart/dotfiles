@@ -53,10 +53,6 @@ endfunction
 
 " Custom key mapping
 inoremap jj <Esc>
-nnoremap <C-h> :tabprevious<CR>
-nnoremap <C-l> :tabnext<CR>
-nnoremap <Leader>t :tabnew<CR>
-nnoremap <Leader>x :tabclose<CR>
 nnoremap <Leader>d :NERDTreeToggle<CR>
 " Tabularize
 nmap <Leader>a= :Tabularize /=<CR>
@@ -76,3 +72,13 @@ map <Leader><Space> :%s/\s\+$//g<CR>
 " Visual indent
 vnoremap < <gv
 vnoremap > >gv
+
+nnoremap <Leader>rh8 :call Ruby19HashTo18()<CR>
+function! Ruby19HashTo18()
+  normal bf:xbPea =>
+endfunction
+
+nnoremap <Leader>rh9 :call Ruby18HashTo19()<CR>
+function! Ruby18HashTo19()
+  normal F:xepldf>
+endfunction
