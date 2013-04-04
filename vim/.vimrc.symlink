@@ -82,3 +82,9 @@ nnoremap <Leader>rh9 :call Ruby18HashTo19()<CR>
 function! Ruby18HashTo19()
   normal F:xepldf>
 endfunction
+
+" RVM
+augroup rvm
+  autocmd!
+  autocmd BufEnter * Rvm
+augroup END
