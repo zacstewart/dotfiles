@@ -8,7 +8,7 @@ else
 fi;
 
 for FILE in $(find . -name *.symlink | grep -v '^./.git'); do
-  DOTFILE=$(echo $FILE | sed 's/.*\/\([[:alnum:]_.]*\).symlink/\1/')
+  DOTFILE=$(echo $FILE | sed 's/.*\/\([a-zA-Z0-9_.-]*\).symlink/\1/')
   RM_CMD="rm $HOME/$DOTFILE"
   BACKUP_CMD="mv $HOME/$DOTFILE $HOME/$DOTFILE.bak"
   LINK_CMD="ln -s $(pwd)/$FILE $HOME/$DOTFILE"
