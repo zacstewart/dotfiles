@@ -11,6 +11,7 @@ bind \ split-window -h
 
 # Colors
 set -g default-terminal "screen-256color"
+source $HOME/.tmux.symlink/bundles/tmux-colors-solarized/tmuxcolors-256.conf
 
 # Powerline
 set-option -g status on

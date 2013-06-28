@@ -97,3 +97,6 @@
 [submodule "tmux/.tmux.symlink/bundles/tmux-powerline"]
 	path = tmux/.tmux.symlink/bundles/tmux-powerline
 	url = git://github.com/erikw/tmux-powerline.git
+[submodule "tmux/.tmux.symlink/bundles/tmux-colors-solarized"]
+	path = tmux/.tmux.symlink/bundles/tmux-colors-solarized
+	url = https://github.com/seebi/tmux-colors-solarized.git
