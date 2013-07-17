@@ -57,6 +57,7 @@ PS1="$FGRN$PS1_HOST\w $FYEL\$(parse_git_branch)$FRED$PS1_PROMPT$RS"
 alias ba='vim $HOME/.bash_aliases && source $HOME/.bash_aliases'
 source $HOME/.bash_aliases
 
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+
 # Bash completion
 [[ -r $HOME/.bash/git-completion.bash ]] && source $HOME/.bash/git-completion.bash
-[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
