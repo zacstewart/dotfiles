@@ -100,3 +100,6 @@
 [submodule "tmux/.tmux.symlink/bundles/tmux-colors-solarized"]
 	path = tmux/.tmux.symlink/bundles/tmux-colors-solarized
 	url = https://github.com/seebi/tmux-colors-solarized.git
+[submodule "vim/.vim.symlink/bundle/Floobits"]
+	path = vim/.vim.symlink/bundle/Floobits
+	url = https://github.com/Floobits/floobits-vim
