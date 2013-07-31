@@ -103,3 +103,6 @@
 [submodule "vim/.vim.symlink/bundle/Floobits"]
 	path = vim/.vim.symlink/bundle/Floobits
 	url = https://github.com/Floobits/floobits-vim
+[submodule "bash/.bash.symlink/bundles/bash-powerline"]
+	path = bash/.bash.symlink/bundles/bash-powerline
+	url = https://github.com/zacstewart/bash-powerline.git
