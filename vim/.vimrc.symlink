@@ -31,6 +31,7 @@ set cursorline                                  " highlight current line
 set laststatus=2                                " always show statusline
 set noshowmode                                  " but not mode
 set clipboard=unnamed                           " use OS clipboard by default
+let g:ctrlp_show_hidden = 1                     " show dotfiles in ctrlp
 
 " Set cursor to a line in edit mode
 if exists('$TMUX')
