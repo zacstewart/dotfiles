@@ -5,3 +5,4 @@ chruby
 imagesnap
 vim
 hub
+bash-completion

@@ -27,4 +27,6 @@ source $HOME/.bash_aliases
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 
 # Bash completion
-[[ -r $HOME/.bash/git-completion.bash ]] && source $HOME/.bash/git-completion.bash
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
