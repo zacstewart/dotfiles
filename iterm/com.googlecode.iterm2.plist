@@ -1000,9 +1000,9 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>307 276 214 309 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>498 283 924 485 0 0 1920 1058 </string>
+	<string>378 268 924 485 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 22 1914 1036 0 0 1920 1058 </string>
+	<string>443 353 1658 995 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>742 531 650 501 0 0 1920 1058 </string>
 	<key>New Bookmarks</key>
@@ -1239,11 +1239,11 @@
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.51685798168182373</real>
+				<real>0.90196079015731812</real>
 				<key>Green Component</key>
-				<real>0.50962930917739868</real>
+				<real>0.90196079015731812</real>
 				<key>Red Component</key>
-				<real>0.44058024883270264</real>
+				<real>0.90196079015731812</real>
 			</dict>
 			<key>Guid</key>
 			<string>693CE5D8-9A12-498D-ACD5-E9A32BEC2CDD</string>
@@ -1575,7 +1575,7 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>MonacoForPowerline 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -1822,7 +1822,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-06-27T20:23:09Z</date>
+	<date>2013-08-08T20:07:54Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
