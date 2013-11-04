@@ -106,3 +106,6 @@
 [submodule "bash/.bash.symlink/bundles/bash-powerline"]
 	path = bash/.bash.symlink/bundles/bash-powerline
 	url = https://github.com/zacstewart/bash-powerline.git
+[submodule "vim/.vim.symlink/bundle/snipmate.vim"]
+	path = vim/.vim.symlink/bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
