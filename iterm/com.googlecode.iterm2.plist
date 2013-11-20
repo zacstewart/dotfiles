@@ -938,6 +938,8 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
@@ -1000,11 +1002,13 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>307 276 214 309 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>378 268 924 485 0 0 1680 1028 </string>
+	<string>498 283 924 485 0 0 1920 1058 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>768 696 384 129 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>443 353 1658 995 0 0 2560 1418 </string>
+	<string>278 557 650 501 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>742 531 650 501 0 0 1920 1058 </string>
+	<string>556 158 1410 900 0 0 1920 1080 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1822,7 +1826,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-08-08T20:07:54Z</date>
+	<date>2013-11-20T15:40:22Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1860,7 +1864,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>Lucida Grande</string>
+	<string>.Lucida Grande UI</string>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WindowStyle</key>
@@ -1872,6 +1876,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20130624</string>
+	<string>1.0.0.20131116</string>
 </dict>
 </plist>
