@@ -37,9 +37,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-railscasts"]
 	path = vim/.vim.symlink/bundle/vim-railscasts
 	url = git://github.com/jgdavey/vim-railscasts.git
-[submodule "vim/.vim.symlink/bundle/vim-lettuce-colors"]
-	path = vim/.vim.symlink/bundle/vim-lettuce-colors
-	url = git://github.com/zalun/vim-lettuce-colors.git
 [submodule "vim/.vim.symlink/bundle/vim-powerline"]
 	path = vim/.vim.symlink/bundle/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
