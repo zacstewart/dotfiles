@@ -112,3 +112,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-cucumber"]
 	path = vim/.vim.symlink/bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
+[submodule "vim/.vim.symlink/bundle/seoul256.vim"]
+	path = vim/.vim.symlink/bundle/seoul256.vim
+	url = https://github.com/junegunn/seoul256.vim
