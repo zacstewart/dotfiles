@@ -18,4 +18,4 @@ bind L resize-pane -R 5 # Over-rides attach to last session
 
 # Colors
 set -g default-terminal "screen-256color"
-set-window-option -g window-status-current-format "#[fg=green, bg=black]⮀#[fg=green, bg=black] #I:#W #[fg=black, bg=green]⮀"
+set-window-option -g window-status-current-format "#[fg=green, bg=black]<#[fg=green, bg=black] #I:#W >#[fg=black, bg=green]"
