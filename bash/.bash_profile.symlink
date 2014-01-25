@@ -3,6 +3,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 source ~/.profile
+eval "$(uru_rt admin install)"
 
 chruby='/usr/local/opt/chruby/share/chruby/auto.sh'
 if [ -a "$chruby" ]; then
