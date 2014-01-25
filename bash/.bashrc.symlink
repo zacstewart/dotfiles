@@ -27,6 +27,9 @@ source $HOME/.bash_aliases
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 
 # Bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+brew > /dev/null 2>&1
+if [[ "$?" -eq "0" ]]; then
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
 fi
