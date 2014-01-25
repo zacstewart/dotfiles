@@ -109,3 +109,6 @@
 [submodule "vim/.vim.symlink/bundle/snipmate.vim"]
 	path = vim/.vim.symlink/bundle/snipmate.vim
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule "vim/.vim.symlink/bundle/vim-cucumber"]
+	path = vim/.vim.symlink/bundle/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber.git
