@@ -1,8 +1,7 @@
-set-option -g default-command "reattach-to-user-namespace -l bash"
-
 # settings
 set -g prefix C-g
 set -g mode-mouse on
+set -g history-limit 10000
 
 # Key bindings
 bind h select-pane -L
