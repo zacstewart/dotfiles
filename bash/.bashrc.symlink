@@ -2,7 +2,7 @@ HISTFILESIZE=30000
 PATH=/usr/local/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-export EDITOR=mvim
+export EDITOR="mvim -v"
 
 
 # Add my key to agent for forwarding unless it's already there
@@ -21,6 +21,7 @@ fi
 PS_SYMBOL='⌁'
 source ~/.bash/bundles/bash-powerline/bash-powerline.sh
 
+# Bash alias
 alias ba='vim $HOME/.bash_aliases && source $HOME/.bash_aliases'
 source $HOME/.bash_aliases
 
