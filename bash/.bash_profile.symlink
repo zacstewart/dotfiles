@@ -2,5 +2,9 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
-source /usr/local/opt/chruby/share/chruby/auto.sh
 source ~/.profile
+
+chruby='/usr/local/opt/chruby/share/chruby/auto.sh'
+if [ -a "$chruby" ]; then
+  source $chruby
+fi
