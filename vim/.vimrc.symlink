@@ -10,7 +10,6 @@ set t_Co=256                                    " use 256 colors
 let g:solarized_termcolors=256                  " limit Solarized theme to 256 colors
 set background=dark                             " dark background
 colorscheme solarized                           " and Solarized as default theme
-let g:Powerline_symbols = 'fancy'               " fancy glyphs for my status line
 
 " Text formatting
 set ai                                          " auto-indent
