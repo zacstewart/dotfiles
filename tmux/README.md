@@ -6,8 +6,8 @@ Resource configuration in current session: `ctrl+g :source-file ~/.tmux.conf`
 * Prefix: `g`
 
 ## Panes
-    -   new horizontal split
-    |   new vertical split
+    s   new horizontal split
+    v   new vertical split
 
     h   select pane to left
     j   select pane to bottom
