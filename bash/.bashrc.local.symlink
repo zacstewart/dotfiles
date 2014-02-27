@@ -1,10 +1,5 @@
 export EDITOR="mvim -v"
 
-chruby='/usr/local/opt/chruby/share/chruby/chruby.sh'
-if [ -a "$chruby" ]; then
-  source "$chruby"
-fi
-
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   source $(brew --prefix)/etc/bash_completion
