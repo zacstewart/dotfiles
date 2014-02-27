@@ -25,18 +25,8 @@ source ~/.bash/bundles/bash-powerline/bash-powerline.sh
 alias ba='$EDITOR $HOME/.bash_aliases && source $HOME/.bash_aliases'
 source $HOME/.bash_aliases
 
-chruby='/usr/local/opt/chruby/share/chruby/chruby.sh'
-if [ -a "$chruby" ]; then
-  source "$chruby"
-fi
-
-# Bash completion
-brew > /dev/null 2>&1
-if [[ "$?" -eq "0" ]]; then
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-  fi
-fi
-
 # added by travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+
+# Machine-specific bashrc
+[ -f $HOME/.bashrc.local ] && source $HOME/.bashrc.local
