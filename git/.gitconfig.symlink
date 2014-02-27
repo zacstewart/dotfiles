@@ -22,4 +22,6 @@
 [init]
 	templatedir = ~/.git_template
 [push]
-	default = matching
+	default = simple
+[mergetool]
+	keepBackup = true
