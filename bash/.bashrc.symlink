@@ -22,7 +22,7 @@ PS_SYMBOL='⌁'
 source ~/.bash/bundles/bash-powerline/bash-powerline.sh
 
 # Bash alias
-alias ba='vim $HOME/.bash_aliases && source $HOME/.bash_aliases'
+alias ba='$EDITOR $HOME/.bash_aliases && source $HOME/.bash_aliases'
 source $HOME/.bash_aliases
 
 chruby='/usr/local/opt/chruby/share/chruby/chruby.sh'
