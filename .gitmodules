@@ -112,3 +112,6 @@
 [submodule "vim/.vim.symlink/bundle/seoul256.vim"]
 	path = vim/.vim.symlink/bundle/seoul256.vim
 	url = https://github.com/junegunn/seoul256.vim
+[submodule "vim/.vim.symlink/bundle/vim-puppet"]
+	path = vim/.vim.symlink/bundle/vim-puppet
+	url = https://github.com/rodjek/vim-puppet.git
