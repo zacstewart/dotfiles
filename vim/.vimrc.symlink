@@ -54,6 +54,7 @@ endfunction
 " Custom key mapping
 inoremap jj <Esc>
 nnoremap <Leader>d :NERDTreeToggle<CR>
+nnoremap X $x
 " Tabularize
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
