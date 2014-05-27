@@ -25,3 +25,10 @@
 	default = simple
 [mergetool]
 	keepBackup = true
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
