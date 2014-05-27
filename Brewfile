@@ -3,6 +3,6 @@ reattach-to-user-namespace
 ruby-install
 uru
 imagesnap
-vim
+macvim
 hub
 bash-completion
