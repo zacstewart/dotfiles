@@ -1,7 +1,7 @@
 tmux
 reattach-to-user-namespace
 ruby-install
-chruby
+uru
 imagesnap
 vim
 hub
