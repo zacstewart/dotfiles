@@ -1212,13 +1212,15 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>307 276 214 309 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>378 268 924 485 0 0 1680 1028 </string>
+	<string>498 282 924 485 0 0 1920 1080 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>768 697 384 129 0 0 1920 1058 </string>
+	<string>526 561 384 129 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>381 12 1122 1166 0 0 1920 1178 </string>
+	<string>0 0 1440 900 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>556 158 1410 900 0 0 1920 1080 </string>
+	<key>NeverWarnAboutShortLivedSessions_693CE5D8-9A12-498D-ACD5-E9A32BEC2CDD</key>
+	<true/>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2036,7 +2038,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-01-31T15:20:17Z</date>
+	<date>2014-05-20T18:10:56Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2078,7 +2080,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>Lucida Grande</string>
+	<string>.Lucida Grande UI</string>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WindowStyle</key>
@@ -2090,6 +2092,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140112</string>
+	<string>1.0.0.20140421</string>
 </dict>
 </plist>
