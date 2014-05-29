@@ -3,6 +3,7 @@ call pathogen#infect()                          " load Pathogen bundles
 filetype plugin indent on                       " use filetype detection and load plugins and indent for them
 au BufRead,BufNewFile *.scss set filetype=scss  " manually define scss filetype detection
 set directory^=$HOME/.vim/.swp//                " centralize swp file location
+runtime macros/matchit.vim
 
 " Appearance
 syntax on                                       " turn on syntax highlighting
