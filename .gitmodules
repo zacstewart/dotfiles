@@ -67,9 +67,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-scala"]
 	path = vim/.vim.symlink/bundle/vim-scala
 	url = git://github.com/derekwyatt/vim-scala.git
-[submodule "vim/.vim.symlink/bundle/vim-vroom"]
-	path = vim/.vim.symlink/bundle/vim-vroom
-	url = git://github.com/skalnik/vim-vroom.git
 [submodule "vim/.vim.symlink/bundle/vim-dispatch"]
 	path = vim/.vim.symlink/bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
