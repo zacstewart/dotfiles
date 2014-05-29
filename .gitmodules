@@ -22,9 +22,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-slim"]
 	path = vim/.vim.symlink/bundle/vim-slim
 	url = git@github.com:slim-template/vim-slim.git
-[submodule "vim/.vim.symlink/bundle/vim-irblack"]
-	path = vim/.vim.symlink/bundle/vim-irblack
-	url = git://github.com/wgibbs/vim-irblack.git
 [submodule "vim/.vim.symlink/bundle/vim-matchit"]
 	path = vim/.vim.symlink/bundle/vim-matchit
 	url = git://github.com/edsono/vim-matchit.git
