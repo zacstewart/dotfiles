@@ -6,6 +6,10 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 export EDITOR='vim'
 
+# Enable /file/path/segment deletion with ctrl-w
+stty werase undef
+bind '\C-w:unix-filename-rubout'
+
 # Add my key to agent for forwarding unless it's already there
 ssh-add -l | grep 'The agent has no identities.' > /dev/null 2>&1
 if [[ "$?" -eq "0" ]]; then
