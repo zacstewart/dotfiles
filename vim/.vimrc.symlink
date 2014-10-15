@@ -9,6 +9,7 @@ runtime macros/matchit.vim
 syntax on                                       " turn on syntax highlighting
 set t_Co=256                                    " use 256 colors
 set background=dark                             " dark background
+let g:seoul256_background = 235
 colorscheme seoul256                            " and seoul256 as default theme
 
 " Text formatting
