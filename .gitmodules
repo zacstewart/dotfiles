@@ -124,6 +124,9 @@
 [submodule "vim/.vim.symlink/bundle/dash.vim"]
 	path = vim/.vim.symlink/bundle/dash.vim
 	url = https://github.com/rizzatti/dash.vim.git
+[submodule "vim/.vim.symlink/bundle/python-syntax"]
+	path = vim/.vim.symlink/bundle/python-syntax
+	url = https://github.com/hdima/python-syntax.git
 [submodule "vim/.vim.symlink/bundle/powerline"]
 	path = vim/.vim.symlink/bundle/powerline
 	url = git@github.com:Lokaltog/powerline.git
