@@ -66,3 +66,5 @@ map <Leader><Space> :%s/\s\+$//g<CR>
 " Visual indent
 vnoremap < <gv
 vnoremap > >gv
+
+nmap <silent> <C-d> <Plug>DashSearch
