@@ -27,14 +27,15 @@ set nowrap                                      " turn off line wrapping
 set mouse=a                                     " use mouse in all modes
 set wildmode=longest,list,full                  " tab completeion: 1) bash-like, 2) list, 3) wildmenu
 set wildmenu                                    " use wildmenu (3rd tab)
-set wildignore+=*/venv/*,*.pyc                  " don't wildmenu these (or ctrlp them)
+set wildignore+=*/venv/*,*.pyc,.root            " don't wildmenu these (or ctrlp them)
 set number                                      " turn on line numbers
 set cursorline                                  " highlight current line
 set laststatus=2                                " always show statusline
 set noshowmode                                  " but not mode
 set clipboard=unnamed                           " use OS clipboard by default
 let g:ctrlp_show_hidden = 1                     " show dotfiles in ctrlp
-let NERDTreeIgnore = ['\.pyc$']                 " ignore from nerdtree
+let g:ctrlp_root_markers = ['.root']            " marker files to inidicate CtrlP root
+let NERDTreeIgnore = ['\.pyc$', '.root']        " ignore from nerdtree
 let NERDTreeShowHidden=1                        " show dotfiles in NERDTree
 
 " Set cursor to a line in edit mode

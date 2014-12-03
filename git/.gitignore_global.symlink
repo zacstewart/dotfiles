@@ -1,4 +1,5 @@
-.DS_Store
 *.pyc
-venv
+.DS_Store
+.root
 tags
+venv
