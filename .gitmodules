@@ -133,3 +133,9 @@
 [submodule "vim/.vim.symlink/bundle/vim-airline"]
 	path = vim/.vim.symlink/bundle/vim-airline
 	url = git@github.com:bling/vim-airline.git
+[submodule "vim/.vim.symlink/bundle/base16-vim"]
+	path = vim/.vim.symlink/bundle/base16-vim
+	url = https://github.com/chriskempson/base16-vim.git
+[submodule "bash/.bash.symlink/bundles/base16-shell"]
+	path = bash/.bash.symlink/bundles/base16-shell
+	url = https://github.com/chriskempson/base16-shell.git

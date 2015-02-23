@@ -35,5 +35,8 @@ export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git'
 # added by travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 
+BASE16_SHELL=$HOME/.bash/bundles/base16-shell/base16-tomorrow.dark.sh
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
 # Machine-specific bashrc
 [ -f $HOME/.bashrc.local ] && source $HOME/.bashrc.local
