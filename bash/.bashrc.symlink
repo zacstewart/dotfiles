@@ -5,6 +5,7 @@ PATH=/usr/local/share/npm/bin:$PATH
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 export EDITOR='vim'
+[ -f $HOME/.bash_profile ] && source $HOME/.bash_profile
 
 # Add my key to agent for forwarding unless it's already there
 ssh-add -l | grep 'The agent has no identities.' > /dev/null 2>&1
