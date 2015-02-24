@@ -19,8 +19,11 @@ if [ -f ~/.aws/credentials ]; then
 fi
 
 # Prompt
-PS_SYMBOL='⌁'
-source ~/.bash/bundles/bash-powerline/bash-powerline.sh
+if [[ $- == *i* ]]
+then
+  PS_SYMBOL='⌁'
+  source ~/.bash/bundles/bash-powerline/bash-powerline.sh
+fi
 
 # Bash alias
 alias ba='$EDITOR $HOME/.bash_aliases && source $HOME/.bash_aliases'
