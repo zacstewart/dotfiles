@@ -1,3 +1,5 @@
 source ~/.profile
 
+[ -f $HOME/.bashrc ] && source $HOME/.bashrc
+
 eval "$(uru_rt admin install)"
