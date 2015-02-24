@@ -12,12 +12,6 @@ if [[ "$?" -eq "0" ]]; then
   ssh-add
 fi
 
-# TODO: Make a credentials folder and put all
-# files like this in there.
-if [ -f ~/.aws/credentials ]; then
-   source ~/.aws/credentials
-fi
-
 # Prompt
 if [[ $- == *i* ]]
 then
