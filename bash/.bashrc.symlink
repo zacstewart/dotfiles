@@ -17,6 +17,9 @@ if [[ $- == *i* ]]
 then
   PS_SYMBOL='⌁'
   source ~/.bash/bundles/bash-powerline/bash-powerline.sh
+
+  BASE16_SHELL=$HOME/.bash/bundles/base16-shell/base16-tomorrow.dark.sh
+  [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 fi
 
 # Bash alias
@@ -24,9 +27,6 @@ alias ba='$EDITOR $HOME/.bash_aliases && source $HOME/.bash_aliases'
 source $HOME/.bash_aliases
 
 export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git'
-
-BASE16_SHELL=$HOME/.bash/bundles/base16-shell/base16-tomorrow.dark.sh
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Machine-specific bashrc
 [ -f $HOME/.bashrc.local ] && source $HOME/.bashrc.local
