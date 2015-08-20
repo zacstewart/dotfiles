@@ -39,7 +39,7 @@ set splitbelow                                  " make new splits appear below
 set splitright                                  " make new vertical splits appear to the right
 let g:ctrlp_show_hidden = 1                     " show dotfiles in ctrlp
 let g:ctrlp_root_markers = ['.root']            " marker files to inidicate CtrlP root
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|data'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|data/*\|tmp'
 let NERDTreeIgnore = ['\.pyc$', '.root']        " ignore from nerdtree
 let NERDTreeShowHidden=1                        " show dotfiles in NERDTree
 
