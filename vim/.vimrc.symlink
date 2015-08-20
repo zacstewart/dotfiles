@@ -80,5 +80,6 @@ map <Leader><Space> :%s/\s\+$//g<CR>
 vnoremap < <gv
 vnoremap > >gv
 nnoremap <Leader>t :Dispatch rspec %<CR>
+nnoremap <Leader>g :GitGutterToggle<CR>
 
 nmap <silent> <C-d> <Plug>DashSearch
