@@ -3,3 +3,4 @@
 **/.root
 tags
 venv
+db/mongodb_development/
