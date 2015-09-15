@@ -2,9 +2,10 @@ HISTFILESIZE=30000
 PATH=/usr/local/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/share/npm/bin:$PATH
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+PATH="$HOME/.bin:$PATH"
 
 export EDITOR='vim'
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 # Add my key to agent for forwarding unless it's already there
 ssh-add -l | grep 'The agent has no identities.' > /dev/null 2>&1
