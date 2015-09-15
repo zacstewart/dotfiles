@@ -5,6 +5,8 @@ PATH=/usr/local/share/npm/bin:$PATH
 PATH="$HOME/.bin:$PATH"
 
 export EDITOR='vim'
+export JAVA8_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+export JAVA_HOME=$JAVA8_HOME
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 # Add my key to agent for forwarding unless it's already there
