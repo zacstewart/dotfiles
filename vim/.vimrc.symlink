@@ -85,4 +85,5 @@ vnoremap > >gv
 nnoremap <Leader>t :Dispatch rspec %<CR>
 nnoremap <Leader>g :GitGutterToggle<CR>
 
+nnoremap <silent> <C-N> :Dispatch git grep --no-color <C-R><C-W><CR>
 nmap <silent> <C-d> <Plug>DashSearch
