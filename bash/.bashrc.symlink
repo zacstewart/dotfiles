@@ -29,7 +29,7 @@ fi
 alias ba='$EDITOR $HOME/.bash_aliases && source $HOME/.bash_aliases'
 source $HOME/.bash_aliases
 
-export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git'
+export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir={.git,tmp,log}'
 
 # Machine-specific bashrc
 [ -f $HOME/.bashrc.local ] && source $HOME/.bashrc.local
