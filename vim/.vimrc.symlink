@@ -28,7 +28,7 @@ set nowrap                                      " turn off line wrapping
 set mouse=a                                     " use mouse in all modes
 set wildmode=longest,list,full                  " tab completeion: 1) bash-like, 2) list, 3) wildmenu
 set wildmenu                                    " use wildmenu (3rd tab)
-set wildignore+=/venv/*,*.pyc,.root,_Chapter.xml " don't wildmenu these (or ctrlp them)
+set wildignore+=/venv/*,*.pyc,.root,_Chapter.xml " don't wildmenu these
 set number                                      " turn on line numbers
 set cursorline                                  " highlight current line
 set laststatus=2                                " always show statusline
@@ -37,12 +37,7 @@ set clipboard=unnamed                           " use OS clipboard by default
 set backspace=indent,eol,start                  " let me delete whitespace, damn it
 set splitbelow                                  " make new splits appear below
 set splitright                                  " make new vertical splits appear to the right
-let g:ctrlp_show_hidden = 1                     " show dotfiles in ctrlp
-let g:ctrlp_root_markers = ['.root']            " marker files to inidicate CtrlP root
-let g:ctrlp_custom_ignore = {
-      \ 'dir': 'node_modules\|\.git\|venv\|*/data/*\|tmp',
-      \ 'file': 'DS_Store'
-      \ }
+
 let NERDTreeIgnore = ['\.pyc$', '.root']        " ignore from nerdtree
 let NERDTreeShowHidden=1                        " show dotfiles in NERDTree
 
@@ -87,3 +82,49 @@ nnoremap <Leader>g :GitGutterToggle<CR>
 
 nnoremap <silent> <C-N> :Dispatch git grep --no-color <C-R><C-W><CR>
 nmap <silent> <C-d> <Plug>DashSearch
+
+function! FindFile()
+  if !filereadable('.file-index')
+    call ReindexFiles()
+  endif
+
+  try
+    let l:response = system('cat .file-index| fzf-tmux --expect enter,ctrl-v,ctrl-x')
+  catch /Vim:Interrupt/
+    redraw!
+    return
+  endtry
+
+  redraw!
+  if strlen(l:response) == 0 | return | endif
+
+  let l:parts = split(l:response, "\n")
+  let l:cmd = l:parts[0]
+  let l:file = l:parts[1]
+
+  if l:cmd == "ctrl-v"
+    execute ":vsplit " . l:file
+  elseif l:cmd == "ctrl-x"
+    execute ":split " . l:file
+  else
+    execute ":e " . l:file
+  endif
+endfunction
+
+function! ReindexFiles()
+  echo "Re-indexing files..."
+  let l:response = system('find . -type f
+      \ -not -iwholename "*.swp"
+      \ -not -iwholename "*/bower_components/*"
+      \ -not -iwholename "*/data/*"
+      \ -not -iwholename "*/node_modules/*"
+      \ -not -iwholename "*/tmp/*"
+      \ -not -iwholename ".git*"
+      \ -not -iwholename "venv/*"
+      \ -print > .file-index')
+  redraw!
+  echo "Done"
+endfunction
+
+nnoremap <C-p> :call ReindexFiles()<CR>
+nnoremap <C-p><C-p> :call FindFile()<CR>
