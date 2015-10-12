@@ -5,12 +5,13 @@ set -g history-limit 10000
 set-option -g set-titles on
 
 # Key bindings
+bind c new-window -c '#{pane_current_path}'
+bind C-s split-window -c '#{pane_current_path}'
+bind C-v split-window -h -c '#{pane_current_path}'
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
-bind C-s split-window
-bind C-v split-window -h
 bind H resize-pane -L 5
 bind J resize-pane -D 5
 bind K resize-pane -U 5
