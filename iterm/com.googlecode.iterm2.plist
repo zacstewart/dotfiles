@@ -1234,6 +1234,8 @@
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Downloads</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1262,13 +1264,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>927 272 445 99 0 0 1680 1027 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>690 552 924 485 0 0 1920 1080 </string>
+	<string>690 552 924 485 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>1323 928 384 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 7 1200 1020 0 0 1680 1050 </string>
+	<string>0 681 570 376 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>991 452 650 501 0 0 1920 1080 </string>
+	<string>991 564 570 376 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>608 257 650 501 0 0 1920 1080 </string>
 	<key>NeverWarnAboutShortLivedSessions_693CE5D8-9A12-498D-ACD5-E9A32BEC2CDD</key>
@@ -3521,7 +3523,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453505047.09833598</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>461962928.45830899</real>
+	<real>465708327.19342297</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -3590,7 +3592,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-08-21T17:35:39Z</date>
+	<date>2015-10-05T03:25:27Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -3633,7 +3635,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>.Helvetica Neue DeskInterface</string>
+	<string>.AppleSystemUIFont</string>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WindowStyle</key>
