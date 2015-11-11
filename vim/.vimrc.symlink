@@ -97,6 +97,7 @@ function! FindFile()
   endtry
 
   redraw!
+
   if strlen(l:response) == 0 | return | endif
 
   let l:parts = split(l:response, "\n")
@@ -114,15 +115,7 @@ endfunction
 
 function! ReindexFiles()
   echo "Re-indexing files..."
-  let l:response = system('find . -type f
-      \ -not -iwholename "*.swp"
-      \ -not -iwholename "*/bower_components/*"
-      \ -not -iwholename "*/data/*"
-      \ -not -iwholename "*/node_modules/*"
-      \ -not -iwholename "*/tmp/*"
-      \ -not -iwholename ".git*"
-      \ -not -iwholename "venv/*"
-      \ -print > .file-index')
+  let l:output = system('ag --nocolor --nogroup --ignore .git --ignore bower_components --ignore node_modules --ignore venv --hidden -l > .file-index')
   redraw!
   echo "Done"
 endfunction
