@@ -32,6 +32,7 @@ set wildignore+=/venv/*,*.pyc,.root             " don't wildmenu these
 set number                                      " turn on line numbers
 set cursorline                                  " highlight current line
 set laststatus=2                                " always show statusline
+set ruler                                       " and show the line and column number in it
 set noshowmode                                  " but not mode
 set clipboard=unnamed                           " use OS clipboard by default
 set backspace=indent,eol,start                  " let me delete whitespace, damn it
