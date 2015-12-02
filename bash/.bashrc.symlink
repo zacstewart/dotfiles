@@ -16,7 +16,7 @@ if [[ "$?" -eq "0" ]]; then
 fi
 
 # Prompt
-if [[ $- == *i* ]]
+if [[ $- == *i* ]] # interactive shell
 then
   BASE16_SHELL=$HOME/.bash/bundles/base16-shell/base16-tomorrow.dark.sh
   [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
