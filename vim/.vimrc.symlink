@@ -38,9 +38,7 @@ set clipboard=unnamed                           " use OS clipboard by default
 set backspace=indent,eol,start                  " let me delete whitespace, damn it
 set splitbelow                                  " make new splits appear below
 set splitright                                  " make new vertical splits appear to the right
-
-let NERDTreeIgnore = ['\.pyc$', '.root']        " ignore from nerdtree
-let NERDTreeShowHidden=1                        " show dotfiles in NERDTree
+let g:netrw_liststyle=3                         " use tree display mode in Netwr
 
 " Set cursor to a line in edit mode
 if exists('$TMUX')
@@ -56,7 +54,7 @@ endif
 inoremap jj <Esc>
 " How many times must I insert jJ:w?
 inoremap jJ <Esc>
-nnoremap <Leader>d :NERDTreeToggle<CR>
+nnoremap <Leader>d :Explore<CR>
 nnoremap X $x
 " Make Y behave like D
 nnoremap Y y$
