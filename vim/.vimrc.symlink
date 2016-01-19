@@ -95,7 +95,7 @@ function! FindFile()
   endif
 
   try
-    let l:response = system('cat .file-index| ' . l:fzf . ' --expect enter,ctrl-v,ctrl-x')
+    let l:response = system('cat .file-index | ' . l:fzf . ' --expect enter,ctrl-v,ctrl-x')
   catch /Vim:Interrupt/
     redraw!
     return
