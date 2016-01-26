@@ -1,7 +1,8 @@
+**/.root
 *.pyc
 .DS_Store
-**/.root
+.byebug_history
+.file-index
+db/mongodb_development/
 tags
 venv
-db/mongodb_development/
-.file-index
