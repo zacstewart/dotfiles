@@ -1,6 +1,7 @@
 [user]
 	name = Zac Stewart
 	email = zgstewart@gmail.com
+	signingkey = 7AEDBFFA
 [core]
 	editor = vim
 	excludesfile = /Users/zacstewart/.gitignore_global
