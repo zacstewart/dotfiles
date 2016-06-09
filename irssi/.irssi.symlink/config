@@ -204,11 +204,6 @@ settings = {
 chatnets = { Freenode = { type = "IRC"; }; Mozilla = { type = "IRC"; }; };
 channels = (
   { name = "#atlrug"; chatnet = "Freenode"; autojoin = "yes"; },
-  { 
-    name = "#rubyontheserver";
-    chatnet = "Freenode";
-    autojoin = "yes";
-  },
   { name = "#ruby"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#vim"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#bitcoin"; chatnet = "Freenode"; autojoin = "yes"; },
