@@ -23,6 +23,9 @@
 	hist = !sh -c \"git log --graph --pretty=format:\\\"%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset\\\" --all\"
 	ctags = !.git/hooks/ctags
 	cleanup = !git branch --merged | grep -v \"^\\*\" | grep -v \"^master\" | xargs git branch -d
+	heads = !git show-ref master
+	pr = !hub pull-request -o
+	squash = !git rebase -i --autostash --autosquash
 [init]
 	templatedir = ~/.git_template
 [push]
