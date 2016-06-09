@@ -6,6 +6,7 @@
 	editor = vim
 	excludesfile = /Users/zacstewart/.gitignore_global
 	trustctime = false
+	ignorecase = false
 [color]
 	ui = true
 [difftool "sourcetree"]
