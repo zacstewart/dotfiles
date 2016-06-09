@@ -216,7 +216,6 @@ channels = (
   { name = "#hitchhiking"; chatnet = "Freenode"; autojoin = "yes"; },
 
   { name = "#rust"; chatnet = "Mozilla"; autojoin = "yes"; },
-  { name = "#rust-gamediv"; chatnet = "Mozilla"; autojoin = "yes"; },
   { name = "#rust-apidesign"; chatnet = "Mozilla"; autojoin = "yes"; },
   { name = "#rust-osdev"; chatnet = "Mozilla"; autojoin = "yes"; },
   { name = "#rust-gamedev"; chatnet = "Mozilla"; autojoin = "yes"; }
