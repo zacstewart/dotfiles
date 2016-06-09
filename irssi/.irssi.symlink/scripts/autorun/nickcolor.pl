@@ -1,1 +1,1 @@
-scripts/nickcolor.pl
+../nickcolor.pl
