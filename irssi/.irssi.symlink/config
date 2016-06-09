@@ -216,3 +216,4 @@ channels = (
   { name = "#rust-gamedev"; chatnet = "Mozilla"; autojoin = "yes"; }
 );
 hilights = ( { text = "zacstewart"; nick = "yes"; word = "yes"; } );
+ignores = ( { mask = "gribble"; level = "ALL"; } );
