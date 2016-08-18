@@ -103,9 +103,8 @@ function! FindFile()
 
   redraw!
 
-  if strlen(l:response) == 0 | return | endif
-
   let l:parts = split(l:response, "\n")
+  if len(l:parts) < 2 | return | endif
   let l:cmd = l:parts[0]
   let l:file = l:parts[1]
 
