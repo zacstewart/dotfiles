@@ -54,7 +54,7 @@ endif
 inoremap jj <Esc>
 " How many times must I insert jJ:w?
 inoremap jJ <Esc>
-nnoremap <Leader>d :Explore<CR>
+nnoremap <Leader>d :NERDTreeToggle<CR>
 nnoremap X $x
 " Make Y behave like D
 nnoremap Y y$
