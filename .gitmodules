@@ -139,3 +139,9 @@
 [submodule "vim/.vim.symlink/bundle/vim-elixir"]
 	path = vim/.vim.symlink/bundle/vim-elixir
 	url = git@github.com:elixir-lang/vim-elixir.git
+[submodule "vim/.vim.symlink/bundle/vim-toml"]
+	path = vim/.vim.symlink/bundle/vim-toml
+	url = git@github.com:cespare/vim-toml.git
+[submodule "vim/.vim.symlink/bundle/swift.vim"]
+	path = vim/.vim.symlink/bundle/swift.vim
+	url = git@github.com:keith/swift.vim.git
