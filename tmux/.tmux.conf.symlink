@@ -1,6 +1,6 @@
 # settings
 set -g prefix C-g
-set -g mode-mouse on
+set -g mouse
 set -g history-limit 10000
 set-option -g set-titles on
 
