@@ -145,3 +145,6 @@
 [submodule "vim/.vim.symlink/bundle/yajs.vim"]
 	path = vim/.vim.symlink/bundle/yajs.vim
 	url = git@github.com:othree/yajs.vim.git
+[submodule "vim/.vim.symlink/bundle/tlib_vim"]
+	path = vim/.vim.symlink/bundle/tlib_vim
+	url = git@github.com:tomtom/tlib_vim.git
