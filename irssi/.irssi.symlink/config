@@ -199,6 +199,7 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "perl/core/scripts" = { nicklist_height = "54"; nicklist_width = "48"; };
+  "fe-common/core" = { hide_colors = "no"; };
 };
 
 chatnets = { Freenode = { type = "IRC"; }; Mozilla = { type = "IRC"; }; };
