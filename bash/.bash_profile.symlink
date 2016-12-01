@@ -3,3 +3,6 @@ source ~/.profile
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
 
 eval "$(uru_rt admin install)"
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
