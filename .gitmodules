@@ -151,3 +151,6 @@
 [submodule "vim/.vim.symlink/bundle/typescript-vim"]
 	path = vim/.vim.symlink/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "vim/.vim.symlink/bundle/syntastic-hbstidy"]
+	path = vim/.vim.symlink/bundle/syntastic-hbstidy
+	url = git@github.com:davidosomething/syntastic-hbstidy.git
