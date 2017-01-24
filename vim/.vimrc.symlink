@@ -137,3 +137,15 @@ endfunction
 
 nnoremap <C-p> :call ReindexFiles()<CR>
 nnoremap <C-p><C-p> :call FindFile()<CR>
+"
+" Map some filetypes, e.g. turn off html checkers on handlebars (I'm using my
+" hbstidy instead of html tidy)
+let g:syntastic_filetype_map = {
+      \   'html.handlebars': 'handlebars',
+      \ }
+
+" Use these checkers (handlebars is a different checker, not required for the
+" hbstidy plugin)
+let g:syntastic_handlebars_checkers  = ['handlebars', 'hbstidy']
+let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
