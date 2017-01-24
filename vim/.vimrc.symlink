@@ -4,6 +4,17 @@ filetype plugin indent on                       " use filetype detection and loa
 au BufRead,BufNewFile *.scss set filetype=scss  " manually define scss filetype detection
 set directory^=$HOME/.vim/.swp//                " centralize swp file location (trailing / is important)
 runtime macros/matchit.vim
+set hidden
+
+" Turn Off Swap Files
+set noswapfile
+set nobackup
+set nowb
+
+" Persistent Undo
+silent !mkdir ~/.vimbackups > /dev/null 2>&1
+set undodir=~/.vimbackups
+set undofile
 
 " Appearance
 syntax on                                       " turn on syntax highlighting
