@@ -1,12 +1,4 @@
 HISTFILESIZE=30000
-PATH=/usr/local/bin:$PATH
-PATH=/usr/local/sbin:$PATH
-PATH="$HOME/.bin:$PATH"
-
-export EDITOR='vim'
-export JAVA8_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
-export JAVA_HOME=$JAVA8_HOME
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 # Add my key to agent for forwarding unless it's already there
 ssh-add -l | grep 'The agent has no identities.' > /dev/null 2>&1
@@ -26,8 +18,6 @@ fi
 # Bash alias
 alias ba='$EDITOR $HOME/.bash_aliases && source $HOME/.bash_aliases'
 source $HOME/.bash_aliases
-
-export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir={.git,tmp,log}'
 
 # Machine-specific bashrc
 [ -f $HOME/.bashrc.local ] && source $HOME/.bashrc.local

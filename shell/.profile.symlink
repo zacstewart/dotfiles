@@ -1,0 +1,45 @@
+# CUDA
+export LD_LIBRARY_PATH="$CUDA_ROOT/lib:$LD_LIBRARY_PATH"
+export PATH="$CUDA_ROOT/bin:$PATH"
+
+# Editor
+export EDITOR='nvim'
+
+# Go
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
+
+# Google Cloude SDK
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/zacstewart/.bin/google-cloud-sdk/path.bash.inc' ]; then source '/Users/zacstewart/.bin/google-cloud-sdk/path.bash.inc'; fi
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/zacstewart/.bin/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/zacstewart/.bin/google-cloud-sdk/completion.bash.inc'; fi
+
+# Grep
+export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir={.git,tmp,log}'
+
+
+# Home bin
+PATH="$HOME/.bin:$PATH"
+
+# Homebrew shit
+PATH=/usr/local/bin:$PATH
+PATH=/usr/local/sbin:$PATH
+
+# Java
+export JAVA8_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+export JAVA_HOME=$JAVA8_HOME
+
+# Metasploit
+export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database.yml
+
+# Node
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+# Rust Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Theano
+export CUDA_ROOT="/usr/local/cuda"
