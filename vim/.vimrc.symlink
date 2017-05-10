@@ -43,14 +43,18 @@ set splitright                                  " make new vertical splits appea
 let g:netrw_liststyle=3                         " use tree display mode in Netwr
 
 " Set cursor to a line in edit mode
-if exists('$TMUX')
-  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-  set ttymouse=xterm2                           " enable mouse control in tmux
-else
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+if !has('nvim')
+  if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+    set ttymouse=xterm2                         " enable mouse control in tmux
+  else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  endif
 endif
+
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
 
 " Custom key mapping
 inoremap jj <Esc>
