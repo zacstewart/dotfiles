@@ -6,6 +6,7 @@ if [[ "$?" -eq "0" ]]; then
   ssh-add
 fi
 
+# Uru Ruby switcher (Bash-dependent initializer)
 eval "$(uru_rt admin install)"
 
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
