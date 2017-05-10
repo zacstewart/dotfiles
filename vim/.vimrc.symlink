@@ -149,3 +149,7 @@ let g:syntastic_filetype_map = {
 let g:syntastic_handlebars_checkers  = ['handlebars', 'hbstidy']
 let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
+
+let g:go_fmt_command = "goimports"
+let g:go_metalinter_autosave = 1
+let g:go_auto_type_info = 1
