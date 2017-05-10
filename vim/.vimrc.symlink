@@ -6,16 +6,6 @@ set directory^=$HOME/.vim/.swp//                " centralize swp file location (
 runtime macros/matchit.vim
 set hidden
 
-" Turn Off Swap Files
-set noswapfile
-set nobackup
-set nowb
-
-" Persistent Undo
-silent !mkdir ~/.vimbackups > /dev/null 2>&1
-set undodir=~/.vimbackups
-set undofile
-
 " Appearance
 syntax on                                       " turn on syntax highlighting
 set t_Co=256                                    " use 256 colors
