@@ -1,6 +1,11 @@
 source ~/.profile
 
-[ -f $HOME/.bashrc ] && source $HOME/.bashrc
+# Add my key to agent for forwarding unless it's already there
+ssh-add -l | grep 'The agent has no identities.' > /dev/null 2>&1
+if [[ "$?" -eq "0" ]]; then
+  ssh-add
+fi
 
 eval "$(uru_rt admin install)"
 
+[ -f $HOME/.bashrc ] && source $HOME/.bashrc
