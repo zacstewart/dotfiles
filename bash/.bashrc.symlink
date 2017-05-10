@@ -1,4 +1,5 @@
-HISTFILESIZE=30000
+HISTFILESIZE=5000
+HISTSIZE=5000
 
 # Prompt
 if [[ $- == *i* ]] # interactive shell
