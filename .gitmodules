@@ -130,9 +130,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-mustache-handlebars"]
 	path = vim/.vim.symlink/bundle/vim-mustache-handlebars
 	url = git://github.com/mustache/vim-mustache-handlebars.git
-[submodule "vim/.vim.symlink/bundle/fzf"]
-	path = vim/.vim.symlink/bundle/fzf
-	url = git@github.com:junegunn/fzf.git
 [submodule "vim/.vim.symlink/bundle/vim-elixir"]
 	path = vim/.vim.symlink/bundle/vim-elixir
 	url = git@github.com:elixir-lang/vim-elixir.git
