@@ -16,7 +16,7 @@ if [ -f '/Users/zacstewart/.bin/google-cloud-sdk/path.bash.inc' ]; then source '
 if [ -f '/Users/zacstewart/.bin/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/zacstewart/.bin/google-cloud-sdk/completion.bash.inc'; fi
 
 # Grep
-export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir={.git,tmp,log}'
+alias grep='grep --color=auto --exclude=*.pyc --exclude-dir={.git,tmp,log} $@'
 
 
 # Home bin
