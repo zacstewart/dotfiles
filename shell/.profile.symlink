@@ -36,7 +36,7 @@ export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database
 # Node
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+if [ -f '/usr/local/opt/nvm/nvm.sh' ]; then . '/usr/local/opt/nvm/nvm.sh'; fi
 
 # Rust Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
