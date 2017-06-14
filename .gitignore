@@ -6,3 +6,4 @@ irssi/.irssi.symlink/certs/*.cer
 vim/.vim.symlink/.netrwhist
 vim/.vim.symlink/.swp/*.sw*
 .DS_Store
+ssh/.ssh.symlink/*

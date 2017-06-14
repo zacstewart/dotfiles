@@ -27,4 +27,7 @@ set -g -a terminal-overrides ',*:Ss=\E[%p1%d q:Se=\E[2 q'
 # Environment
 set-option -ga update-environment ' PATH GEM_HOME'
 
+# Fix SSH agent when tmux is detached
+setenv -g SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
+
 source ~/.tmux.conf.local
