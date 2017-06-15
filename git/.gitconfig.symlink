@@ -33,7 +33,7 @@
 [mergetool]
 	keepBackup = false
 [diff]
-	tool = p4mergetool
+	algorithm = patience
 [difftool]
 	prompt = false
 [filter "media"]
