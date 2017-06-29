@@ -88,6 +88,10 @@ nnoremap <Leader>g :GitGutterToggle<CR>
 nnoremap <silent> <C-N> :Dispatch git grep --no-color <C-R><C-W><CR>
 nmap <silent> <C-d> <Plug>DashSearch
 
+" ctrl-{a,e} for jumping to {begnning,end} of command mode line
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+
 function! FindFile()
   if !filereadable('.file-index')
     call ReindexFiles()
