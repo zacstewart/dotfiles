@@ -18,6 +18,7 @@ colorscheme base16-tomorrow                     " and base16-tomorrow as default
 " Text formatting
 set ai                                          " auto-indent
 set si                                          " smart indentation
+au! FileType python setl nosmartindent          " don't smart indent python
 set expandtab                                   " use soft tabs
 set softtabstop=2                               " that are 2 spaces wide
 set shiftwidth=2                                " auto-indent and shift by 2 spaces
