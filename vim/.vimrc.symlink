@@ -28,6 +28,7 @@ set listchars=tab:▸\ ,trail:·                   " specifically, tabs and trai
 set nowrap                                      " turn off line wrapping
 
 " UI
+set hlsearch                                    " highlight search terms
 set mouse=a                                     " use mouse in all modes
 set wildmode=longest,list,full                  " tab completeion: 1) bash-like, 2) list, 3) wildmenu
 set wildmenu                                    " use wildmenu (3rd tab)
