@@ -115,12 +115,6 @@
 [submodule "vim/.vim.symlink/bundle/powerline"]
 	path = vim/.vim.symlink/bundle/powerline
 	url = git@github.com:Lokaltog/powerline.git
-[submodule "vim/.vim.symlink/bundle/base16-vim"]
-	path = vim/.vim.symlink/bundle/base16-vim
-	url = https://github.com/chriskempson/base16-vim.git
-[submodule "bash/.bash.symlink/bundles/base16-shell"]
-	path = bash/.bash.symlink/bundles/base16-shell
-	url = https://github.com/chriskempson/base16-shell.git
 [submodule "vim/.vim.symlink/bundle/vim-blockle"]
 	path = vim/.vim.symlink/bundle/vim-blockle
 	url = git@github.com:jgdavey/vim-blockle.git
