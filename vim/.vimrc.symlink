@@ -87,6 +87,11 @@ vnoremap > >gv
 nnoremap <Leader>t :Dispatch rspec %<CR>
 nnoremap <Leader>g :GitGutterToggle<CR>
 
+" Tmux-like navigation
+nnoremap <silent> <C-w>c :tabnew<CR>
+nnoremap <silent> <C-w>n :tabnext<CR>
+nnoremap <silent> <C-w>p :tabprevious<CR>
+
 nnoremap <silent> <C-N> :Dispatch git grep --no-color <C-R><C-W><CR>
 nmap <silent> <C-d> <Plug>DashSearch
 
