@@ -10,10 +10,7 @@ set hidden
 syntax on                                       " turn on syntax highlighting
 set t_Co=256                                    " use 256 colors
 set background=dark                             " dark background
-let g:seoul256_background = 235
-let g:solarized_termcolors = 256
-let base16colorspace = 256                      " Access colors present in 256 colorspace
-colorscheme base16-tomorrow                     " and base16-tomorrow as default theme
+colorscheme Tomorrow-Night                      " and base16-tomorrow as default theme
 
 " Text formatting
 set ai                                          " auto-indent
