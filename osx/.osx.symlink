@@ -19,3 +19,5 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Faster fullscreen animation
 defaults write -g NSWindowResizeTime -float 0.001
+
+sudo spctl --master-disable
