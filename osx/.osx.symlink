@@ -16,3 +16,6 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Faster fullscreen animation
+defaults write -g NSWindowResizeTime -float 0.001
