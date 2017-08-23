@@ -3,7 +3,7 @@
 	email = zgstewart@gmail.com
 	signingkey = 7AEDBFFA
 [core]
-	editor = vim
+	editor = $EDITOR
 	excludesfile = /Users/zacstewart/.gitignore_global
 	trustctime = false
 	ignorecase = false
