@@ -18,7 +18,6 @@ if [ -f '/Users/zacstewart/.bin/google-cloud-sdk/completion.bash.inc' ]; then so
 # Grep
 alias grep='grep --color=auto --exclude=*.pyc --exclude-dir={.git,tmp,log} $@'
 
-
 # Home bin
 PATH="$HOME/.bin:$PATH"
 
