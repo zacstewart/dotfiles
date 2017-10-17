@@ -135,7 +135,11 @@ function! ReindexFiles()
   echo "Re-indexing files..."
   let l:output = system('ag --nocolor --nogroup --ignore .git --ignore bower_components --ignore doc --ignore node_modules --ignore venv --hidden -l > .file-index')
   redraw!
-  echo "Done"
+  if v:shell_error
+    echo "Couldn't index files: " . l:output
+  else
+    echo "Done"
+  endif
 endfunction
 
 nnoremap <C-p> :call ReindexFiles()<CR>
