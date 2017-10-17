@@ -81,7 +81,7 @@
 	url = https://github.com/Floobits/floobits-vim
 [submodule "vim/.vim.symlink/bundle/snipmate.vim"]
 	path = vim/.vim.symlink/bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim.git
+	url = https://github.com/garbas/snipmate.vim.git
 [submodule "vim/.vim.symlink/bundle/vim-cucumber"]
 	path = vim/.vim.symlink/bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
