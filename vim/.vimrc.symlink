@@ -11,7 +11,7 @@ set hidden
 syntax on                                       " turn on syntax highlighting
 set t_Co=256                                    " use 256 colors
 set background=dark                             " dark background
-colorscheme Tomorrow-Night                      " and base16-tomorrow as default theme
+colorscheme Tomorrow-Night
 
 " Text formatting
 set ai                                          " auto-indent
