@@ -1,4 +1,4 @@
-source ~/.profile
+. ~/.profile
 
 # Add my key to agent for forwarding unless it's already there
 ssh-add -l | grep 'The agent has no identities.' > /dev/null 2>&1
@@ -9,9 +9,10 @@ fi
 # Uru Ruby switcher (Bash-dependent initializer)
 eval "$(uru_rt admin install)"
 
-[ -f $HOME/.bashrc ] && source $HOME/.bashrc
 
 # Add bash completion for git
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+
+[ -f $HOME/.bashrc ] && . $HOME/.bashrc
