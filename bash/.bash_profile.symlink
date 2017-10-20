@@ -10,3 +10,8 @@ fi
 eval "$(uru_rt admin install)"
 
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
+
+# Add bash completion for git
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
