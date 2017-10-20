@@ -157,3 +157,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-tomorrow-theme"]
 	path = vim/.vim.symlink/bundle/vim-tomorrow-theme
 	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "vim/.vim.symlink/bundle/vdebug"]
+	path = vim/.vim.symlink/bundle/vdebug
+	url = git://github.com/joonty/vdebug.git

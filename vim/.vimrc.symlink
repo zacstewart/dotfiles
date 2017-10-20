@@ -1,5 +1,6 @@
 set nocompatible                                " turn off VI compatibility mode
 call pathogen#infect()                          " load Pathogen bundles
+call pathogen#helptags()
 filetype plugin indent on                       " use filetype detection and load plugins and indent for them
 au BufRead,BufNewFile *.scss set filetype=scss  " manually define scss filetype detection
 set directory^=$HOME/.vim/.swp//                " centralize swp file location (trailing / is important)
@@ -160,3 +161,9 @@ let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 let g:go_fmt_command = "goimports"
 let g:go_metalinter_autosave = 1
 let g:go_auto_type_info = 1
+
+
+if !exists('g:vdebug_options')
+    let g:vdebug_options = {}
+endif
+let g:vdebug_options["break_on_open"] = 0
