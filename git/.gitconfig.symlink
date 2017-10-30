@@ -4,7 +4,7 @@
 	signingkey = 7AEDBFFA
 [core]
 	editor = $EDITOR
-	excludesfile = /Users/zacstewart/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	trustctime = false
 	ignorecase = false
 [color]
