@@ -43,9 +43,6 @@
 [submodule "vim/.vim.symlink/bundle/ack.vim"]
 	path = vim/.vim.symlink/bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
-[submodule "vim/.vim.symlink/bundle/syntastic"]
-	path = vim/.vim.symlink/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "vim/.vim.symlink/bundle/numbers.vim"]
 	path = vim/.vim.symlink/bundle/numbers.vim
 	url = git://github.com/myusuf3/numbers.vim.git
@@ -160,3 +157,6 @@
 [submodule "vim/.vim.symlink/bundle/vdebug"]
 	path = vim/.vim.symlink/bundle/vdebug
 	url = git://github.com/joonty/vdebug.git
+[submodule "vim/.vim.symlink/bundle/neomake"]
+	path = vim/.vim.symlink/bundle/neomake
+	url = git://github.com/neomake/neomake
