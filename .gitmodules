@@ -154,6 +154,6 @@
 [submodule "vim/.vim.symlink/bundle/vdebug"]
 	path = vim/.vim.symlink/bundle/vdebug
 	url = git://github.com/joonty/vdebug.git
-[submodule "vim/.vim.symlink/bundle/neomake"]
-	path = vim/.vim.symlink/bundle/neomake
-	url = git://github.com/neomake/neomake
+[submodule "vim/.vim.symlink/bundle/vim-rhubarb"]
+	path = vim/.vim.symlink/bundle/vim-rhubarb
+	url = git://github.com/tpope/vim-rhubarb.git
