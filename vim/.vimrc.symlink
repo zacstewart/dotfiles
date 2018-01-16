@@ -7,6 +7,10 @@ set directory^=$HOME/.vim/.swp//                " centralize swp file location (
 runtime macros/matchit.vim
 set hidden
 
+" Performance tweaks
+set ttyfast
+set lazyredraw
+
 " Appearance
 syntax on                                       " turn on syntax highlighting
 set t_Co=256                                    " use 256 colors
