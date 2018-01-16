@@ -2,7 +2,6 @@ set nocompatible                                " turn off VI compatibility mode
 call pathogen#infect()                          " load Pathogen bundles
 call pathogen#helptags()
 filetype plugin indent on                       " use filetype detection and load plugins and indent for them
-au BufRead,BufNewFile *.scss set filetype=scss  " manually define scss filetype detection
 set directory^=$HOME/.vim/.swp//                " centralize swp file location (trailing / is important)
 runtime macros/matchit.vim
 set hidden
@@ -100,6 +99,9 @@ nmap <silent> <C-d> <Plug>DashSearch
 " ctrl-{a,e} for jumping to {begnning,end} of command mode line
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
+
+" manually define filetypes
+autocmd BufNewFile,BufRead  *.scss  set filetype=scss
 
 function! FindFile()
   if !filereadable('.file-index')
