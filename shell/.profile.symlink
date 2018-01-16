@@ -41,9 +41,6 @@ if [ -f '/usr/local/opt/nvm/nvm.sh' ]; then . '/usr/local/opt/nvm/nvm.sh'; fi
 # Rust Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# Terminal emulator
-export TERM='xterm-256color'
-
 # Theano
 export CUDA_ROOT="/usr/local/cuda"
 
