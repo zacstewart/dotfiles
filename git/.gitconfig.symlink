@@ -48,3 +48,5 @@
 	trustExitCode = false
 [commit]
 	verbose = true
+[include]
+  path = .gitconfig.local
