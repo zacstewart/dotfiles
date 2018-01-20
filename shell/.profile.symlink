@@ -42,3 +42,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Theano
 export CUDA_ROOT="/usr/local/cuda"
+
+. $HOME/.profile.local
