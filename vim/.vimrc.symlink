@@ -1,16 +1,20 @@
 set nocompatible                                " turn off VI compatibility mode
 call pathogen#infect()                          " load Pathogen bundles
+call pathogen#helptags()
 filetype plugin indent on                       " use filetype detection and load plugins and indent for them
-au BufRead,BufNewFile *.scss set filetype=scss  " manually define scss filetype detection
 set directory^=$HOME/.vim/.swp//                " centralize swp file location (trailing / is important)
 runtime macros/matchit.vim
 set hidden
+
+" Performance tweaks
+set ttyfast
+set lazyredraw
 
 " Appearance
 syntax on                                       " turn on syntax highlighting
 set t_Co=256                                    " use 256 colors
 set background=dark                             " dark background
-colorscheme Tomorrow-Night                      " and base16-tomorrow as default theme
+colorscheme solarized
 
 " Text formatting
 set ai                                          " auto-indent
@@ -96,6 +100,9 @@ nmap <silent> <C-d> <Plug>DashSearch
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
+" manually define filetypes
+autocmd BufNewFile,BufRead  *.scss  set filetype=scss
+
 function! FindFile()
   if !filereadable('.file-index')
     call ReindexFiles()
@@ -135,24 +142,26 @@ function! ReindexFiles()
   echo "Re-indexing files..."
   let l:output = system('ag --nocolor --nogroup --ignore .git --ignore bower_components --ignore doc --ignore node_modules --ignore venv --hidden -l > .file-index')
   redraw!
-  echo "Done"
+  if v:shell_error
+    echo "Couldn't index files: " . l:output
+  else
+    echo "Done"
+  endif
 endfunction
 
 nnoremap <C-p> :call ReindexFiles()<CR>
 nnoremap <C-p><C-p> :call FindFile()<CR>
-"
-" Map some filetypes, e.g. turn off html checkers on handlebars (I'm using my
-" hbstidy instead of html tidy)
-let g:syntastic_filetype_map = {
-      \   'html.handlebars': 'handlebars',
-      \ }
-
-" Use these checkers (handlebars is a different checker, not required for the
-" hbstidy plugin)
-let g:syntastic_handlebars_checkers  = ['handlebars', 'hbstidy']
-let g:syntastic_javascript_checkers = ['jsxhint']
-let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 
 let g:go_fmt_command = "goimports"
 let g:go_metalinter_autosave = 1
 let g:go_auto_type_info = 1
+
+if !exists('g:vdebug_options')
+    let g:vdebug_options = {}
+endif
+let g:vdebug_options["break_on_open"] = 0
+
+let s:vimrc_local = $HOME . '/.vimrc.local'
+if filereadable(s:vimrc_local)
+  execute "source " . s:vimrc_local
+endif

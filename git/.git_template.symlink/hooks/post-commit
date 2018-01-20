@@ -2,6 +2,4 @@
 
 if [ ! -d "$GIT_DIR/rebase-merge" ]; then
   .git/hooks/ctags >/dev/null 2>&1 &
-
-  gitshot &
 fi

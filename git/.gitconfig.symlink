@@ -4,7 +4,7 @@
 	signingkey = 7AEDBFFA
 [core]
 	editor = $EDITOR
-	excludesfile = /Users/zacstewart/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	trustctime = false
 	ignorecase = false
 [color]
@@ -48,3 +48,7 @@
 	trustExitCode = false
 [commit]
 	verbose = true
+[gui]
+	fontdiff = -family Menlo -size 11 -weight normal -slant roman -underline 0 -overstrike 0
+[include]
+  path = .gitconfig.local

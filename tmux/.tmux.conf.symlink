@@ -3,6 +3,7 @@ set -g prefix C-g
 set -g mouse
 set -g history-limit 10000
 set-option -g set-titles on
+set-option -s escape-time 5 # reduce lag time of esc in vim
 
 # Key bindings
 bind c new-window -c '#{pane_current_path}'
