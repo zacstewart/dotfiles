@@ -1,6 +1,37 @@
 #!/bin/sh
 set -e
 PATH="/usr/local/bin:$PATH"
-trap "rm -f .git/tags.$$" EXIT
-ctags --tag-relative -Rf.git/tags.$$ --exclude=.git --exclude=tmp --languages=-sql
-mv .git/tags.$$ .git/tags
+LOCKDIR=".git/tags.lock"
+WORKFILE=".git/tags.$$"
+
+lock() {
+  mkdir $LOCKDIR
+  return $?
+}
+
+cleanup() {
+  rm -rf $LOCKDIR
+  rm -f $WORKFILE
+  return $?
+}
+
+# Get a lock on this repo for ctag indexing
+if lock
+then
+  # Unlock and remove workfile when done
+  trap cleanup EXIT INT QUIT TERM
+
+  # Index project into workfile
+  ctags \
+    --tag-relative \
+    --exclude=.git \
+    --exclude=tmp \
+    --languages=-sql \
+    --recurse \
+    -f $WORKFILE
+
+  # Move workfile into tags
+  mv .git/tags.$$ .git/tags
+else
+  echo >&2 "ctags is already indexing this repo ($LOCKDIR locked). Exiting"
+fi
