@@ -4,7 +4,7 @@ call pathogen#helptags()
 filetype plugin indent on                       " use filetype detection and load plugins and indent for them
 set directory^=$HOME/.vim/.swp//                " centralize swp file location (trailing / is important)
 runtime macros/matchit.vim
-set hidden
+set hidden                                      " hide unsaved buffers instead of closing them
 
 " Performance tweaks
 set ttyfast
