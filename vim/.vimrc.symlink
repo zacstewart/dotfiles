@@ -104,6 +104,9 @@ nmap <silent> <C-d> <Plug>DashSearch
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
+" Get rid of search highlighting when done with it
+nnoremap <silent> <C-h> :noh<CR>
+
 " manually define filetypes
 autocmd BufNewFile,BufRead  *.scss  set filetype=scss
 
