@@ -34,7 +34,6 @@ export JAVA_HOME=$JAVA8_HOME
 export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database.yml
 
 # Node
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export NVM_DIR="$HOME/.nvm"
 if [ -f '/usr/local/opt/nvm/nvm.sh' ]; then . '/usr/local/opt/nvm/nvm.sh'; fi
 
