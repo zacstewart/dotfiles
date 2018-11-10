@@ -43,4 +43,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Theano
 export CUDA_ROOT="/usr/local/cuda"
 
-. $HOME/.profile.local
+# Source machine-local profile if it exists
+if [ -f $HOME/.profile.local ]; then . $HOME/.profile.local; fi

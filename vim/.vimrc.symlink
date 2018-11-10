@@ -4,7 +4,7 @@ call pathogen#helptags()
 filetype plugin indent on                       " use filetype detection and load plugins and indent for them
 set directory^=$HOME/.vim/.swp//                " centralize swp file location (trailing / is important)
 runtime macros/matchit.vim
-set hidden
+set hidden                                      " hide unsaved buffers instead of closing them
 
 " Performance tweaks
 set ttyfast
@@ -44,6 +44,8 @@ set backspace=indent,eol,start                  " let me delete whitespace, damn
 set splitbelow                                  " make new splits appear below
 set splitright                                  " make new vertical splits appear to the right
 let g:netrw_liststyle=3                         " use tree display mode in Netwr
+
+set tags=.git/tags                              " ctags
 
 " Set cursor to a line in edit mode
 if !has('nvim')
@@ -102,6 +104,9 @@ nmap <silent> <C-d> <Plug>DashSearch
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
+" Get rid of search highlighting when done with it
+nnoremap <silent> <C-h> :noh<CR>
+
 " manually define filetypes
 autocmd BufNewFile,BufRead  *.scss  set filetype=scss
 
@@ -141,7 +146,7 @@ function! FindFile()
 endfunction
 
 function! ReindexFiles()
-  echo "Re-indexing files..."
+  echo "Reindexing files..."
   let l:output = system('ag --nocolor --nogroup --ignore .git --ignore bower_components --ignore doc --ignore node_modules --ignore venv --hidden -l > .file-index')
   redraw!
   if v:shell_error
@@ -162,6 +167,7 @@ if !exists('g:vdebug_options')
     let g:vdebug_options = {}
 endif
 let g:vdebug_options["break_on_open"] = 0
+let g:vdebug_options["timeout"] = 60
 
 let s:vimrc_local = $HOME . '/.vimrc.local'
 if filereadable(s:vimrc_local)

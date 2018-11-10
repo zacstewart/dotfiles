@@ -5,7 +5,7 @@ LOCKDIR=".git/tags.lock"
 WORKFILE=".git/tags.$$"
 
 lock() {
-  mkdir $LOCKDIR
+  mkdir $LOCKDIR > /dev/null 2>&1
   return $?
 }
 
@@ -34,4 +34,5 @@ then
   mv .git/tags.$$ .git/tags
 else
   echo >&2 "ctags is already indexing this repo ($LOCKDIR locked). Exiting"
+  exit 1
 fi
