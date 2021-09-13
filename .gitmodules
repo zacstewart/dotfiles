@@ -97,9 +97,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-addon-mw-utils"]
 	path = vim/.vim.symlink/bundle/vim-addon-mw-utils
 	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "vim/.vim.symlink/bundle/dash.vim"]
-	path = vim/.vim.symlink/bundle/dash.vim
-	url = git://github.com/rizzatti/dash.vim.git
 [submodule "vim/.vim.symlink/bundle/powerline"]
 	path = vim/.vim.symlink/bundle/powerline
 	url = git://github.com/Lokaltog/powerline.git
