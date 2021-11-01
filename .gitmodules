@@ -148,3 +148,6 @@
 [submodule "vim/.vim.symlink/bundle/syntastic"]
 	path = vim/.vim.symlink/bundle/syntastic
 	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "vim/.vim.symlink/bundle/python-syntax"]
+	path = vim/.vim.symlink/bundle/python-syntax
+	url = git@github.com:vim-python/python-syntax.git
