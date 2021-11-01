@@ -144,10 +144,10 @@
 	url = git://github.com/tpope/vim-rhubarb.git
 [submodule "vim/.vim.symlink/bundle/rust.vim"]
 	path = vim/.vim.symlink/bundle/rust.vim
-	url = git@github.com:rust-lang/rust.vim.git
+	url = git://github.com/rust-lang/rust.vim.git
 [submodule "vim/.vim.symlink/bundle/syntastic"]
 	path = vim/.vim.symlink/bundle/syntastic
-	url = git@github.com:vim-syntastic/syntastic.git
+	url = git://github.com/vim-syntastic/syntastic.git
 [submodule "vim/.vim.symlink/bundle/python-syntax"]
 	path = vim/.vim.symlink/bundle/python-syntax
-	url = git@github.com:vim-python/python-syntax.git
+	url = git://github.com/vim-python/python-syntax.git
