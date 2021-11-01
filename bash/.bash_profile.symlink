@@ -10,9 +10,7 @@ fi
 eval "$(uru_rt admin install)"
 
 
-# Add bash completion for git
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
+# Activate bash completions from Homebrew
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 [ -f $HOME/.bashrc ] && . $HOME/.bashrc
