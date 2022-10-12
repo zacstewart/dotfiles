@@ -102,6 +102,7 @@ autocmd BufNewFile,BufRead  *.scss  set filetype=scss
 " File exploring
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+nnoremap <Leader>e :Explore<CR>
 nnoremap <Leader>d :Vexplore<CR>
 let g:netrw_winsize = 20
 
