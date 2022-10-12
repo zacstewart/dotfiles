@@ -105,6 +105,13 @@ autocmd BufNewFile,BufRead  *.scss  set filetype=scss
 nnoremap <Leader>d :Vexplore<CR>
 let g:netrw_winsize = 20
 
+""
+" Opens a file fuzzy-finder to search files listed in $PWD/.file-index.
+"
+" Enter opens the file in the current split
+" ctrl-t opens it in a new tab
+" ctrl-v opens in a virtical split
+" ctrl-x opens in a horizontal spit
 function! FindFile()
   if !filereadable('.file-index')
     call ReindexFiles()
@@ -118,7 +125,7 @@ function! FindFile()
   endif
 
   try
-    let l:response = system('cat .file-index | ' . l:fzf . ' --expect enter,ctrl-v,ctrl-x')
+    let l:response = system('cat .file-index | ' . l:fzf . ' --expect enter,ctrl-t,ctrl-v,ctrl-x')
   catch /Vim:Interrupt/
     redraw!
     return
@@ -131,7 +138,9 @@ function! FindFile()
   let l:cmd = l:parts[0]
   let l:file = l:parts[1]
 
-  if l:cmd == "ctrl-v"
+  if l:cmd == "ctrl-t"
+    execute ":tabnew " . l:file
+  elseif l:cmd == "ctrl-v"
     execute ":vsplit " . l:file
   elseif l:cmd == "ctrl-x"
     execute ":split " . l:file
