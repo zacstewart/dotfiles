@@ -1,6 +1,8 @@
 HISTFILESIZE=5000
 HISTSIZE=5000
 
+alias ls='ls --color=auto'
+
 # Prompt
 if [[ $- == *i* ]] # interactive shell
 then
