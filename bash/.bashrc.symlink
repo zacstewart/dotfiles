@@ -3,6 +3,9 @@ export HISTSIZE=100000                   # big big history
 export HISTFILESIZE=100000               # big big history
 shopt -s histappend                      # append to history, don't overwrite it
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 alias ls='ls --color=auto'
 
 # Prompt
