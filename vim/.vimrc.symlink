@@ -70,21 +70,6 @@ inoremap jJ <Esc>
 nnoremap X $x
 " Make Y behave like D
 nnoremap Y y$
-" Tabularize
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a\/ :Tabularize /\/<CR>
-vmap <Leader>a\/ :Tabularize /\/<CR>
-nmap <Leader>a{ :Tabularize /{<CR>
-vmap <Leader>a{ :Tabularize /{<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
-vmap <Leader>a: :Tabularize /:\zs<CR>
-nmap <Leader>a, :Tabularize /,\zs<CR>
-vmap <Leader>a, :Tabularize /,\zs<CR>
-nmap <Leader>a> :Tabularize /[=-]><CR>
-vmap <Leader>a> :Tabularize /[=-]><CR>
-nmap <Leader>a\| :Tabularize /\|<CR>
-vmap <Leader>a\| :Tabularize /\|<CR>
 " remove superfluous whitespace
 map <Leader><Space> :%s/\s\+$//g<CR>
 " Visual indent
@@ -186,3 +171,35 @@ let s:vimrc_local = $HOME . '/.vimrc.local'
 if filereadable(s:vimrc_local)
   execute "source " . s:vimrc_local
 endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Configuration                                                         "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Tabularize
+
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a\/ :Tabularize /\/<CR>
+vmap <Leader>a\/ :Tabularize /\/<CR>
+nmap <Leader>a{ :Tabularize /{<CR>
+vmap <Leader>a{ :Tabularize /{<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+nmap <Leader>a, :Tabularize /,\zs<CR>
+vmap <Leader>a, :Tabularize /,\zs<CR>
+nmap <Leader>a> :Tabularize /[=-]><CR>
+vmap <Leader>a> :Tabularize /[=-]><CR>
+nmap <Leader>a\| :Tabularize /\|<CR>
+vmap <Leader>a\| :Tabularize /\|<CR>
+
+" NERDCommenter
+
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
