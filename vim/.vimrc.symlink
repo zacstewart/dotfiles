@@ -64,7 +64,6 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
 inoremap jj <Esc>
 " How many times must I insert jJ:w?
 inoremap jJ <Esc>
-nnoremap <Leader>d :NERDTreeToggle<CR>
 nnoremap X $x
 " Make Y behave like D
 nnoremap Y y$
@@ -110,6 +109,13 @@ nnoremap <silent> <C-h> :noh<CR>
 
 " manually define filetypes
 autocmd BufNewFile,BufRead  *.scss  set filetype=scss
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" File exploring
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+nnoremap <Leader>d :Vexplore<CR>
+let g:netrw_winsize = 20
 
 function! FindFile()
   if !filereadable('.file-index')
