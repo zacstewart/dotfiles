@@ -95,6 +95,8 @@ nnoremap <Leader>g :GitGutterToggle<CR>
 nnoremap <silent> <C-w>c :tabnew<CR>
 nnoremap <silent> <C-w>n :tabnext<CR>
 nnoremap <silent> <C-w>p :tabprevious<CR>
+nnoremap <silent> <C-w>N :tabmove +1<CR>
+nnoremap <silent> <C-w>P :tabmove -1<CR>
 
 nnoremap <silent> <C-N> :Dispatch git grep --no-color <C-R><C-W><CR>
 nmap <silent> <C-d> <Plug>DashSearch
