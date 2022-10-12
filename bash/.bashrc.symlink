@@ -12,4 +12,4 @@ alias ba='$EDITOR $HOME/.bash_aliases && source $HOME/.bash_aliases'
 [ -f $HOME/.bash_aliases ] && . $HOME/.bash_aliases
 
 # Machine-specific bashrc
-[ -f $HOME/.bashrc.local ] && source $HOME/.bashrc.local
+[ -f $HOME/.bashrc.local ] && . $HOME/.bashrc.local
