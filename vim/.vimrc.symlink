@@ -75,8 +75,6 @@ map <Leader><Space> :%s/\s\+$//g<CR>
 " Visual indent
 vnoremap < <gv
 vnoremap > >gv
-nnoremap <Leader>t :Dispatch rspec %<CR>
-nnoremap <Leader>g :GitGutterToggle<CR>
 
 " Tmux-like navigation
 nnoremap <silent> <C-w>c :tabnew<CR>
