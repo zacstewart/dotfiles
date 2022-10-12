@@ -32,3 +32,7 @@ set-option -ga update-environment ' PATH GEM_HOME'
 setenv -g SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 
 source ~/.tmux.conf.local
+
+# Move windows left and right
+bind P swap-window -t -1
+bind N swap-window -t +1
