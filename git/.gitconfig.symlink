@@ -28,6 +28,7 @@
 	squash = !git rebase -i --autostash --autosquash
 [init]
 	templatedir = ~/.git_template
+	defaultBranch = master
 [push]
 	default = simple
 [mergetool]
