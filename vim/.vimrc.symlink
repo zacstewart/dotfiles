@@ -60,10 +60,13 @@ endif
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Custom key mapping
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 inoremap jj <Esc>
 " How many times must I insert jJ:w?
 inoremap jJ <Esc>
+
 nnoremap X $x
 " Make Y behave like D
 nnoremap Y y$
@@ -152,6 +155,9 @@ function! FindFile()
   endif
 endfunction
 
+""
+" Reindexes the files in $PWD using ag. It ignores gitignored files as well as
+" some package manager artifacts
 function! ReindexFiles()
   echo "Reindexing files..."
   let l:output = system('ag --nocolor --nogroup --ignore .git --ignore bower_components --ignore doc --ignore node_modules --ignore venv --hidden -l > .file-index')
