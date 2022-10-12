@@ -39,7 +39,7 @@ set cursorline                                  " highlight current line
 set laststatus=2                                " always show statusline
 set ruler                                       " and show the line and column number in it
 set noshowmode                                  " but not mode
-set clipboard=unnamed                           " use OS clipboard by default
+set clipboard=unnamedplus                       " use OS clipboard by default
 set backspace=indent,eol,start                  " let me delete whitespace, damn it
 set splitbelow                                  " make new splits appear below
 set splitright                                  " make new vertical splits appear to the right
