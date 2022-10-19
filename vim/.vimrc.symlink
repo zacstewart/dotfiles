@@ -101,6 +101,7 @@ autocmd BufNewFile,BufRead  *.scss  set filetype=scss
 
 nnoremap <Leader>e :Explore<CR>
 nnoremap <Leader>d :Vexplore<CR>
+nnoremap <Leader>t :Texplore<CR>
 let g:netrw_winsize = 20
 
 ""
