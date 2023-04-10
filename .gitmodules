@@ -67,9 +67,6 @@
 [submodule "tmux/.tmux.symlink/bundles/tmux-colors-solarized"]
 	path = tmux/.tmux.symlink/bundles/tmux-colors-solarized
 	url = git@github.com:seebi/tmux-colors-solarized.git
-[submodule "vim/.vim.symlink/bundle/snipmate.vim"]
-	path = vim/.vim.symlink/bundle/snipmate.vim
-	url = git@github.com:garbas/vim-snipmate.git
 [submodule "vim/.vim.symlink/bundle/vim-cucumber"]
 	path = vim/.vim.symlink/bundle/vim-cucumber
 	url = git@github.com:tpope/vim-cucumber.git
