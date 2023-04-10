@@ -124,9 +124,6 @@
 [submodule "vim/.vim.symlink/bundle/syntastic-hbstidy"]
 	path = vim/.vim.symlink/bundle/syntastic-hbstidy
 	url = git@github.com:davidosomething/syntastic-hbstidy.git
-[submodule "vim/.vim.symlink/bundle/vim-jsx"]
-	path = vim/.vim.symlink/bundle/vim-jsx
-	url = git@github.com:mxw/vim-jsx.git
 [submodule "vim/.vim.symlink/bundle/vim-go"]
 	path = vim/.vim.symlink/bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
