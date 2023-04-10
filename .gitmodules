@@ -52,9 +52,6 @@
 [submodule "vim/.vim.symlink/bundle/ragel.vim"]
 	path = vim/.vim.symlink/bundle/ragel.vim
 	url = git@github.com:jayferd/ragel.vim.git
-[submodule "vim/.vim.symlink/bundle/vim-rvm"]
-	path = vim/.vim.symlink/bundle/vim-rvm
-	url = git@github.com:tpope/vim-rvm.git
 [submodule "vim/.vim.symlink/bundle/vim-endwise"]
 	path = vim/.vim.symlink/bundle/vim-endwise
 	url = git@github.com:tpope/vim-endwise.git
