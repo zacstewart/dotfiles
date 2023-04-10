@@ -85,9 +85,6 @@
 [submodule "vim/.vim.symlink/bundle/vim-golang"]
 	path = vim/.vim.symlink/bundle/vim-golang
 	url = git@github.com:jnwhiteh/vim-golang.git
-[submodule "vim/.vim.symlink/bundle/vim-addon-mw-utils"]
-	path = vim/.vim.symlink/bundle/vim-addon-mw-utils
-	url = git@github.com:MarcWeber/vim-addon-mw-utils.git
 [submodule "vim/.vim.symlink/bundle/powerline"]
 	path = vim/.vim.symlink/bundle/powerline
 	url = git@github.com:Lokaltog/powerline.git
