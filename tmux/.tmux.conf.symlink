@@ -17,6 +17,7 @@ bind H resize-pane -L 5
 bind J resize-pane -D 5
 bind K resize-pane -U 5
 bind L resize-pane -R 5 # Over-rides attach to last session
+bind - last-window
 
 # Colors
 set -g default-terminal "screen-256color"
