@@ -1,6 +1,6 @@
 [user]
 	name = Zac Stewart
-	email = hi@zacstewart.com
+	email = git@zacstewart.com
 	signingkey = 7AEDBFFA
 [core]
 	editor = $EDITOR
