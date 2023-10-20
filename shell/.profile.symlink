@@ -37,8 +37,8 @@ export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database
 export NVM_DIR="$HOME/.nvm"
 if [ -f '/usr/local/opt/nvm/nvm.sh' ]; then . '/usr/local/opt/nvm/nvm.sh'; fi
 
-# Rust Cargo
-export PATH="$HOME/.cargo/bin:$PATH"
+# Rust & Cargo
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
 # Theano
 export CUDA_ROOT="/usr/local/cuda"
