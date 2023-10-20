@@ -21,3 +21,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write -g NSWindowResizeTime -float 0.001
 
 sudo spctl --master-disable
+
+# Don't reopen all my windows upon login
+defaults write com.apple.loginwindow TALLogoutSavesState -bool false
+defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
