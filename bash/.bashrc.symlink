@@ -14,8 +14,8 @@ then
   source ~/.bash/prompt.sh
 fi
 
-# Bash alias
-alias ba='$EDITOR $HOME/.bash_aliases && source $HOME/.bash_aliases'
+# Bash aliases
+alias ba='$EDITOR $HOME/.bash_aliases; . $HOME/.bash_aliases'
 [ -f $HOME/.bash_aliases ] && . $HOME/.bash_aliases
 
 # Machine-specific bashrc
