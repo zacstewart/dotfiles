@@ -40,8 +40,5 @@ if [ -f '/usr/local/opt/nvm/nvm.sh' ]; then . '/usr/local/opt/nvm/nvm.sh'; fi
 # Rust & Cargo
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
-# Theano
-export CUDA_ROOT="/usr/local/cuda"
-
 # Source machine-local profile if it exists
 if [ -f $HOME/.profile.local ]; then . $HOME/.profile.local; fi
