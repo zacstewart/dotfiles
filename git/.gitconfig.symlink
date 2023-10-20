@@ -47,8 +47,9 @@
 	trustExitCode = false
 [commit]
 	verbose = true
+	template = /Users/zacstewart/.stCommitMsg
 [gui]
-	fontdiff = -family \"Liberation Mono\" -size 9 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"Liberation Mono\" -size 11 -weight normal -slant roman -underline 0 -overstrike 0
 	fontui = -family FreeSans -size 10 -weight normal -slant roman -underline 0 -overstrike 0
 	spellingdictionary = none
 [include]
