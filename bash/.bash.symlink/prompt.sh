@@ -1,4 +1,5 @@
 setup_prompt() {
+  export VIRTUAL_ENV_DISABLE_PROMPT=1
   readonly PS_SYMBOL='$'
   readonly GIT_NEED_PUSH_SYMBOL='⇡'
   readonly GIT_NEED_PULL_SYMBOL='⇣'
@@ -42,6 +43,14 @@ setup_prompt() {
     printf " [$FG_YELLOW$ref$changes$RESET]"
   }
 
+  __venv() {
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+      printf " ${FG_GREEN}venv${RESET}"
+    else
+      return
+    fi
+  }
+
   ps1() {
     case $? in
       0)
@@ -54,7 +63,7 @@ setup_prompt() {
         local fg_exit="$FG_YELLO"
     esac
 
-    PS1="\w$(__git_status) $fg_exit$PS_SYMBOL$RESET "
+    PS1="\w$(__venv)$(__git_status) $fg_exit$PS_SYMBOL$RESET "
   }
 
   PROMPT_COMMAND=ps1
