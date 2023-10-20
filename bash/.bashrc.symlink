@@ -21,6 +21,4 @@ alias ba='$EDITOR $HOME/.bash_aliases && source $HOME/.bash_aliases'
 # Machine-specific bashrc
 [ -f $HOME/.bashrc.local ] && . $HOME/.bashrc.local
 
-source /usr/share/chruby/chruby.sh
-
 source "$HOME/.cargo/env"
