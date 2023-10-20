@@ -212,3 +212,7 @@ let g:NERDSpaceDelims = 1
 
 " Align line-wise comment delimiters flush left instead of following code indentation
 let g:NERDDefaultAlign = 'left'
+
+" Turn on all Python syntax highlighting options, turn off Python 2 though
+let g:python_highlight_all = 1
+let g:python_version_2 = 0
