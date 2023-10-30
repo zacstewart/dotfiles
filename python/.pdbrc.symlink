@@ -1,0 +1,10 @@
+import atexit
+import os
+import readline
+
+
+def save_history(): import os, readline; readline.set_history_length(10000); readline.write_history_file(os.path.expanduser("~/.pdbhistory"))
+
+if os.path.exists(os.path.expanduser("~/.pdbhistory")): readline.read_history_file(os.path.expanduser("~/.pdbhistory"))
+
+atexit.register(save_history)
