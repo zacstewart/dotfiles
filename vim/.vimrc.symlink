@@ -214,3 +214,6 @@ let g:NERDDefaultAlign = 'left'
 " Turn on all Python syntax highlighting options, turn off Python 2 though
 let g:python_highlight_all = 1
 let g:python_version_2 = 0
+
+# Indenting inside parents should only be one shiftwidth. It defaults to 2
+let g:pyindent_open_paren=shiftwidth()
