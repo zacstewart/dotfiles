@@ -23,8 +23,7 @@ bind - last-window
 set -g default-terminal "screen-256color"
 set-window-option -g window-status-current-format "#[fg=green, bg=black]#[fg=green, bg=black] #I:#W #[fg=black, bg=green]"
 
-# Work with Neovim NVIM_TUI_ENABLE_CURSOR_SHAPE
-set -g -a terminal-overrides ',*:Ss=\E[%p1%d q:Se=\E[2 q'
+set-option -g focus-events on
 
 # Environment
 set-option -ga update-environment ' PATH GEM_HOME'
