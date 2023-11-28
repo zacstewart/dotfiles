@@ -31,8 +31,9 @@ set-option -ga update-environment ' PATH GEM_HOME'
 # Fix SSH agent when tmux is detached
 setenv -g SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 
-source ~/.tmux.conf.local
-
 # Move windows left and right
 bind P swap-window -t -1\; select-window -t -1
 bind N swap-window -t +1\; select-window -t +1
+
+# Source machine-local config
+source ~/.tmux.conf.local
