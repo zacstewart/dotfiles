@@ -3,7 +3,7 @@ export LD_LIBRARY_PATH="$CUDA_ROOT/lib:$LD_LIBRARY_PATH"
 export PATH="$CUDA_ROOT/bin:$PATH"
 
 # Editor
-export EDITOR='nvim'
+export EDITOR='vim'
 
 # Go
 export GOPATH=$HOME/.go
