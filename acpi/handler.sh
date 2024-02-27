@@ -24,15 +24,15 @@ case "$1" in
         ;;
     ac_adapter)
         case "$2" in
-            AC|ACAD|ADP0)
+            AC|ACAD|ADP0|ACPI0003:00)
                 case "$4" in
                     00000000)
                         logger 'AC unpluged'
-                        powerprofilectl set power-saver
+                        /bin/powerprofilesctl set power-saver
                         ;;
                     00000001)
                         logger 'AC pluged'
-                        powerprofilectl set balanced
+                        /bin/powerprofilesctl set balanced
                         ;;
                 esac
                 ;;
@@ -43,7 +43,7 @@ case "$1" in
         ;;
     battery)
         case "$2" in
-            BAT0)
+            BAT0|PNP0C0A:00)
                 case "$4" in
                     00000000)
                         logger 'Battery online'
@@ -55,7 +55,7 @@ case "$1" in
                 ;;
             CPU0)
                 ;;
-            *)  logger "ACPI action undefined: $2" ;;
+            *)  logger -p 4 "battery ACPI action undefined: $2" ;;
         esac
         ;;
     button/lid)
@@ -67,12 +67,12 @@ case "$1" in
                 logger 'LID opened'
                 ;;
             *)
-                logger "ACPI action undefined: $3"
+                logger -p 4 "ACPI action undefined: $3"
                 ;;
     esac
     ;;
     *)
-        logger "ACPI group/action undefined: $1 / $2"
+        logger -p 4 "ACPI group/action undefined: $1 / $2"
         ;;
 esac
 
