@@ -4,7 +4,9 @@ if [ -z "$SSH_AGENT_PID" ]; then
   eval `ssh-agent -s`
 fi
 
-# Add my key to agent for forwarding unless it's already there
+# Add my key to agent for forwarding unless it's already there On each
+# workstation, have a separate key like com.zacstewart.tractable and then
+# symlink it to this path
 ssh-add -l | grep 'The agent has no identities.' > /dev/null 2>&1
 if [[ "$?" -eq "0" ]]; then
   ssh-add ~/.ssh/com.zacstewart.hi
