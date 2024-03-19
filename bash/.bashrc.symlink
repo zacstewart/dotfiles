@@ -17,6 +17,10 @@ then
   source ~/.bash/prompt.sh
 fi
 
+# Command line utilities
+alias grep='grep --color=auto --exclude=*.pyc --exclude-dir={.git,tmp,log} $@'
+alias ls='ls --color=auto'
+
 # Bash aliases
 alias ba='$EDITOR $HOME/.bash_aliases; . $HOME/.bash_aliases'
 [ -f $HOME/.bash_aliases ] && . $HOME/.bash_aliases
