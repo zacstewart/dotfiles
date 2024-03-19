@@ -6,7 +6,7 @@ like keys.
 ## Install
 
 ```sh
-$ git clone git@github.com:zacstewart/dotfiles.git .dotfiles
+$ git clone --recurse-submodules -j8 git@github.com:zacstewart/dotfiles.git
 $ cd dotfiles
 $ make backups install
 ```
