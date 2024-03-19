@@ -27,3 +27,6 @@ fi
 
 # Source machine-local profile if it exists
 if [ -f $HOME/.profile.local ]; then . $HOME/.profile.local; fi
+
+# Get smooth scrolling in Firefox instead of jerky scrollwheel feeling
+export MOZ_USE_XINPUT2=1
