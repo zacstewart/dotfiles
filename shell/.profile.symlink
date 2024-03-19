@@ -1,7 +1,3 @@
-# CUDA
-export LD_LIBRARY_PATH="$CUDA_ROOT/lib:$LD_LIBRARY_PATH"
-export PATH="$CUDA_ROOT/bin:$PATH"
-
 # Test which OS we're running
 case "$(uname -s)" in
     Linux*)  export OS=linux;;
@@ -16,28 +12,11 @@ export EDITOR='vim'
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
-# Google Cloude SDK
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/zacstewart/.bin/google-cloud-sdk/path.bash.inc' ]; then source '/Users/zacstewart/.bin/google-cloud-sdk/path.bash.inc'; fi
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/zacstewart/.bin/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/zacstewart/.bin/google-cloud-sdk/completion.bash.inc'; fi
-
 # Home bins
 PATH="$HOME/.bin:$PATH"
 PATH="$HOME/bin:$PATH"
 
 # Homebrew shit
-# Java
-export JAVA8_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
-export JAVA_HOME=$JAVA8_HOME
-
-# Metasploit
-export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database.yml
-
-# Node
-export NVM_DIR="$HOME/.nvm"
-if [ -f '/usr/local/opt/nvm/nvm.sh' ]; then . '/usr/local/opt/nvm/nvm.sh'; fi
-
 if [ "$OS" = "macos" ]; then
   PATH=/usr/local/bin:$PATH
   PATH=/usr/local/sbin:$PATH
