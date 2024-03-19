@@ -12,7 +12,4 @@ if [[ "$?" -eq "0" ]]; then
   ssh-add ~/.ssh/com.zacstewart.hi
 fi
 
-# Activate bash completions from Homebrew
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-
 [ -f $HOME/.bashrc ] && . $HOME/.bashrc

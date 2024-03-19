@@ -1,12 +1,15 @@
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
 export HISTSIZE=100000                   # big big history
 export HISTFILESIZE=100000               # big big history
 shopt -s histappend                      # append to history, don't overwrite it
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-alias ls='ls --color=auto'
+# Activate bash completions from Homebrew
+if [[ "$OS" == "macos" ]]; then
+  [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+fi
 
 # Prompt
 if [[ $- == *i* ]] # interactive shell

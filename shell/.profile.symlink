@@ -2,6 +2,13 @@
 export LD_LIBRARY_PATH="$CUDA_ROOT/lib:$LD_LIBRARY_PATH"
 export PATH="$CUDA_ROOT/bin:$PATH"
 
+# Test which OS we're running
+case "$(uname -s)" in
+    Linux*)  export OS=linux;;
+    Darwin*) export OS=macos;;
+    *)       echo "Unknown OS"
+esac
+
 # Editor
 export EDITOR='vim'
 
@@ -23,9 +30,6 @@ PATH="$HOME/.bin:$PATH"
 PATH="$HOME/bin:$PATH"
 
 # Homebrew shit
-PATH=/usr/local/bin:$PATH
-PATH=/usr/local/sbin:$PATH
-
 # Java
 export JAVA8_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 export JAVA_HOME=$JAVA8_HOME
@@ -36,6 +40,11 @@ export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database
 # Node
 export NVM_DIR="$HOME/.nvm"
 if [ -f '/usr/local/opt/nvm/nvm.sh' ]; then . '/usr/local/opt/nvm/nvm.sh'; fi
+
+if [ "$OS" = "macos" ]; then
+  PATH=/usr/local/bin:$PATH
+  PATH=/usr/local/sbin:$PATH
+fi
 
 # Rust & Cargo
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
