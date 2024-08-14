@@ -102,9 +102,27 @@ autocmd BufNewFile,BufRead  scp://*  set cmdheight=2
 " File exploring
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-nnoremap <Leader>e :Explore<CR>
-nnoremap <Leader>d :Vexplore<CR>
-nnoremap <Leader>t :Texplore<CR>
+function! NetrwE()
+  Explore
+  set relativenumber
+endfunction
+
+function! NetrwV()
+  Vexplore
+  set relativenumber
+endfunction
+
+function! NetrwT()
+  Texplore
+  set relativenumber
+endfunction
+
+nnoremap <Leader>e :call NetrwE()<CR>
+nnoremap <Leader>t :call NetrwT()<CR>
+nnoremap <Leader>d :call NetrwV()<CR>
+
+" Make the window smaller than half-split (I rarely use this, it's from my
+" attachment to NerdTree)
 let g:netrw_winsize = 20
 
 ""
