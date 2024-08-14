@@ -97,9 +97,6 @@
 [submodule "vim/.vim.symlink/bundle/typescript-vim"]
 	path = vim/.vim.symlink/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
-[submodule "vim/.vim.symlink/bundle/syntastic-hbstidy"]
-	path = vim/.vim.symlink/bundle/syntastic-hbstidy
-	url = git@github.com:davidosomething/syntastic-hbstidy.git
 [submodule "vim/.vim.symlink/bundle/vim-go"]
 	path = vim/.vim.symlink/bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
@@ -115,12 +112,12 @@
 [submodule "vim/.vim.symlink/bundle/rust.vim"]
 	path = vim/.vim.symlink/bundle/rust.vim
 	url = git@github.com:rust-lang/rust.vim.git
-[submodule "vim/.vim.symlink/bundle/syntastic"]
-	path = vim/.vim.symlink/bundle/syntastic
-	url = git@github.com:vim-syntastic/syntastic.git
 [submodule "vim/.vim.symlink/bundle/python-syntax"]
 	path = vim/.vim.symlink/bundle/python-syntax
 	url = git@github.com:vim-python/python-syntax.git
 [submodule "vim/.vim.symlink/bundle/file-line"]
 	path = vim/.vim.symlink/bundle/file-line
 	url = git@github.com:bogado/file-line.git
+[submodule "vim/.vim.symlink/bundle/ale"]
+	path = vim/.vim.symlink/bundle/ale
+	url = git@github.com:dense-analysis/ale.git
