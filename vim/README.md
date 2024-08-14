@@ -34,3 +34,7 @@ any time by hitting ctrl-p ONCE and waiting (don't double tap).
 time, and this gives me a chance to cancel it by tapping ctrl-p again.)
 
 You can view the PWD file tree with NERDTree by hitting <Leader>d.
+
+## Wishlist
+
+- [ ] `:set spell` underlines spelling errors in comments, but not strings
