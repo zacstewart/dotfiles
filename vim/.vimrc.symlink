@@ -20,6 +20,10 @@ colorscheme retrobox
 set ai                                          " auto-indent
 set si                                          " smart indentation
 au! FileType python setl nosmartindent          " don't smart indent python
+autocmd FileType python setlocal shiftwidth=4
+autocmd FileType python setlocal tabstop=4
+autocmd FileType python setlocal softtabstop=4
+autocmd FileType python setlocal expandtab
 set expandtab                                   " use soft tabs
 set softtabstop=2                               " that are 2 spaces wide
 set shiftwidth=2                                " auto-indent and shift by 2 spaces
@@ -216,4 +220,8 @@ let g:python_highlight_all = 1
 let g:python_version_2 = 0
 
 " Indenting inside parents should only be one shiftwidth. It defaults to 2
-let g:pyindent_open_paren=shiftwidth()
+let g:python_indent = {}
+let g:python_indent.open_paren = 'shiftwidth()'
+
+" DEPRECATED
+let g:pyindent_open_paren='shiftwidth()'
