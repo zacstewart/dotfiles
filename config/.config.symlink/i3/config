@@ -64,6 +64,9 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
+# start a file browser
+bindsym $mod+Shift+Return exec --no-startup-id dolphin
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -172,6 +175,12 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# lock session
+bindsym $mod+Shift+Ctrl+l exec "loginctl lock-session"
+# suspend
+bindsym $mod+Shift+Ctrl+s exec "systemctl suspend"
+# autorander change screens
+bindsym $mod+Shift+Ctrl+a exec "autorandr --change"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
