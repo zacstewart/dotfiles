@@ -1,4 +1,5 @@
 **/.root
+*.egg-info/
 *.pyc
 .DS_Store
 .byebug_history
