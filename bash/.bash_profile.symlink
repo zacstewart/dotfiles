@@ -13,3 +13,5 @@ if [[ "$?" -eq "0" ]]; then
 fi
 
 [ -f $HOME/.bashrc ] && . $HOME/.bashrc
+
+eval "$(rbenv init - bash)"
