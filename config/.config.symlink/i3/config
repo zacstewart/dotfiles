@@ -40,6 +40,8 @@ exec --no-startup-id dunst
 # KDE Connect tray icon for laptop-to-phone transfers
 exec --no-startup-id kdeconnect-indicator
 
+exec --no-startup-id tailscale-systray
+
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Use pactl to adjust volume in PulseAudio.
