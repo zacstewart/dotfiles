@@ -217,4 +217,11 @@ bindsym $mod+r mode "resize"
         # status_command i3status
 # }
 
+# Applications and Workspaces
 for_window [class="SpeedCrunch"] floating enable
+for_window [class="Discord"] floating disable
+## Communication
+assign [class="Discord"] $ws4
+assign [class="Slack"] $ws4
+# TODO Thunderbird
+assign [class="Spotify"] $ws5
