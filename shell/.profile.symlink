@@ -24,6 +24,7 @@ fi
 
 # Rust & Cargo
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+[ -d "$HOME/.cargo/bin" ] && export PATH="$HOME/.cargo/bin:$PATH"
 
 # Source machine-local profile if it exists
 if [ -f $HOME/.profile.local ]; then . $HOME/.profile.local; fi
