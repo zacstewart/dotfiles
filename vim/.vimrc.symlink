@@ -85,8 +85,6 @@ nnoremap <silent> <C-w>p :tabprevious<CR>
 nnoremap <silent> <C-w>N :tabmove +1<CR>
 nnoremap <silent> <C-w>P :tabmove -1<CR>
 
-nnoremap <silent> <C-N> :Dispatch git grep --no-color <C-R><C-W><CR>
-
 " ctrl-{a,e} for jumping to {begnning,end} of command mode line
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
