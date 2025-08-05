@@ -12,7 +12,6 @@ set lazyredraw
 
 " Appearance
 syntax on                                       " turn on syntax highlighting
-set t_Co=256                                    " use 256 colors
 set background=dark                             " dark background
 colorscheme retrobox
 
