@@ -1,8 +1,7 @@
 .DS_Store
 .file-index
 bash/.bash.symlink/.netrwhist
-config/.config.symlink/QtProject
-config/.config.symlink/Slack
+config/.config.symlink/*
 irssi/.irssi.symlink/away.log
 irssi/.irssi.symlink/certs/*.cer
 irssi/.irssi.symlink/certs/*.key
