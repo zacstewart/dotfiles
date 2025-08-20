@@ -224,8 +224,10 @@ bindsym $mod+r mode "resize"
 # Applications and Workspaces
 for_window [class="SpeedCrunch"] floating enable
 for_window [class="Discord"] floating disable
+for_window [class="LocalSend"] floating enable
 ## Communication
 assign [class="Discord"] $ws4
 assign [class="Slack"] $ws4
+## Audio, Video, Entertainment
 # TODO Thunderbird
 assign [class="Spotify"] $ws5
