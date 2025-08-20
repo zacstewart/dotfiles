@@ -6,7 +6,7 @@ case "$(uname -s)" in
 esac
 
 # Editor
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Go
 export GOPATH=$HOME/.go
