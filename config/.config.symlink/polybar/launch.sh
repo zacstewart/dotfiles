@@ -1,31 +1,27 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Terminate already running bar instances
 killall -q polybar
-# If all your bars have ipc enabled, you can also use
-# polybar-msg cmd quit
+while pgrep -x polybar >/dev/null; do sleep 0.2; done
 
-# Wait until all polybars quit
-while pgrep -x polybar >/dev/null; do sleep 1; done
+# How many outputs are actually connected?
+mon_count=$(xrandr --query | grep -c ' connected')
 
-# Launch Polybar, using default config location ~/.config/polybar/config.ini
-# polybar primary 2>&1 | tee -a /tmp/polybar.log & disown
+# Helper: is this the built-in panel?
+is_laptop_panel() { [[ $1 =~ ^eDP(-[0-9])?$ ]]; }
 
-if type "xrandr"; then
-  xrandr --query | grep " connected" | while read -r monitor ; do
-    output=$(echo $monitor | cut -d" " -f1)
-    echo $monitor | grep "primary" > /dev/null
-    if [ $? -eq 0 ]; then
-      bar="primary"
+xrandr --query | grep ' connected' | while read -r line; do
+    output=$(echo "$line" | awk '{print $1}')
+
+    if [[ $mon_count -eq 1 ]]; then
+        bar="sole"
+    elif is_laptop_panel "$output"; then
+        bar="secondary"
     else
-      bar="secondary"
+        bar="primary"
     fi
-    echo $monitor
-    echo "Starting $bar"
-    MONITOR=$output polybar --reload $bar | tee -a /tmp/polybar.log & disown
-  done
-else
-  polybar --reload primary | tee -a /tmp/polybar.log & disown
-fi
+
+    echo "Starting bar '$bar' on $output"
+    MONITOR=$output polybar --reload "$bar" 2>&1 | tee -a /tmp/polybar.log & disown
+done
 
 echo "Polybar launched..."
