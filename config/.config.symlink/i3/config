@@ -68,7 +68,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # start a file browser
 bindsym $mod+Shift+Return exec --no-startup-id dolphin
