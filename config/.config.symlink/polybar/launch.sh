@@ -20,8 +20,11 @@ xrandr --query | grep ' connected' | while read -r line; do
         bar="primary"
     fi
 
-    echo "Starting bar '$bar' on $output"
-    MONITOR=$output polybar --reload "$bar" 2>&1 | tee -a /tmp/polybar.log & disown
+    echo "Starting bar '$bar' on $output" | systemd-cat -t polybar
+    systemd-cat -t polybar \
+      env MONITOR=$output polybar --reload "$bar" \
+      & disown
+
 done
 
-echo "Polybar launched..."
+echo "Polybar launched..." | systemd-cat -t polybar
