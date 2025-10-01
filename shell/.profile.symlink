@@ -12,6 +12,18 @@ export EDITOR='nvim'
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
+# Home bins
+# TODO: maybe these should be consolidated. What's the standard home bins?
+PATH="$HOME/.bin:$PATH"
+PATH="$HOME/bin:$PATH"
+. "$HOME/.local/bin/env"
+
+# Homebrew shit
+if [ "$OS" = "macos" ]; then
+  PATH=/usr/local/bin:$PATH
+  PATH=/usr/local/sbin:$PATH
+fi
+
 # Rust & Cargo
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 [ -d "$HOME/.cargo/bin" ] && export PATH="$HOME/.cargo/bin:$PATH"
@@ -24,7 +36,3 @@ if [ -f $HOME/.profile.local ]; then . $HOME/.profile.local; fi
 
 # Get smooth scrolling in Firefox instead of jerky scrollwheel feeling
 export MOZ_USE_XINPUT2=1
-
-# Add local bins to PATH
-PATH="$HOME/.bin:$PATH"
-PATH="$HOME/bin:$PATH"
